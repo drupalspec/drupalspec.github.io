@@ -214,6 +214,9 @@ header .col-3 .cart:hover + .modal-cart {
 #content .product .item .colors table tr:first-child td {
   padding-top: 35px;
 }
+#content .product .item .colors table tr:last-child td {
+  padding-bottom: 30px;
+}
 #content .product .item .colors table td {
   vertical-align: middle;
   padding-top: 20px;
@@ -279,7 +282,7 @@ header .col-3 .cart:hover + .modal-cart {
   border-bottom: 0;
   width: 75%;
   border-radius: 10px 10px 0 10px;
-  margin-bottom: 64px;
+  margin-bottom: 94px;
 }
 #content .product .item.active .colors {
   display: block;
