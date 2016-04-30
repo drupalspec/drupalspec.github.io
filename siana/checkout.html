@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>index page</title>
+    <meta charset="UTF-8">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300&amp;subset=latin,cyrillic-ext,cyrillic" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?&amp;sensor=true"></script>
+    <script src="js/main.js"></script>
+  </head>
+  <body class="inner">
+    <div class="page-wrap">
+      <header>
+        <div class="container">
+          <div class="col-1">
+            <ul class="links">
+              <li>8-800-100-93-21</li>
+              <li><a href="#">mail@certa.ru</a></li>
+            </ul>
+          </div>
+          <div class="col-2"><a id="modal" href="javascript:void(0)" onclick="openModal()" data-state="0" class="btn">Перезвоните мне!</a></div>
+          <div class="col-3">
+            <div class="cart">0 товаров</div>
+            <div class="modal-cart">
+              <div class="triangle"></div>
+              <div class="triangle fake"></div>
+              <ul>
+                <li><img src="img/Rectangle-5.jpg" alt=""><span>Белый</span></li>
+                <li><img src="img/Rectangle-5-1.jpg" alt=""><span>Бирюзовый</span></li>
+                <li><img src="img/Rectangle-5-2.jpg" alt=""><span>Розовый</span></li>
+                <li><img src="img/Rectangle-5-3.jpg" alt=""><span>Золотой</span></li>
+              </ul><a href="/order.html" class="btn">Оформить заказ</a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section id="content">
+        <div class="container">
+          <div class="logo"><a href="/"><img src="img/logo.png" alt=""></a></div>
+          <div class="info-block"><span>Оформление заказа</span></div>
+          <div class="order">
+            <table align="center">
+              <tr>
+                <td><img src="img/Rectangle-5.jpg" alt=""><strong>Белый</strong><span>Decorative</span></td>
+                <td><span>Количество: </span>
+                  <input type="text" value="2">x &nbsp;&nbsp; 2400 руб.
+                </td>
+                <td><strong>4 800 руб.</strong></td>
+              </tr>
+              <tr>
+                <td><img src="img/Rectangle-5-1.jpg" alt=""><strong>Бирюзовый</strong><span>Decorative</span></td>
+                <td><span>Количество: </span>
+                  <input type="text" value="2">x &nbsp;&nbsp; 2400 руб.
+                </td>
+                <td><strong>4 800 руб.</strong></td>
+              </tr>
+              <tr>
+                <td><img src="img/Rectangle-5-2.jpg" alt=""><strong>Розовый</strong><span>Decorative</span></td>
+                <td><span>Количество: </span>
+                  <input type="text" value="2">x &nbsp;&nbsp; 2400 руб.
+                </td>
+                <td><strong>4 800 руб.</strong></td>
+              </tr>
+              <tr>
+                <td><img src="img/Rectangle-5-3.jpg" alt=""><strong>Золотой</strong><span>Decorative</span></td>
+                <td><span>Количество: </span>
+                  <input type="text" value="2">x &nbsp;&nbsp; 2400 руб.
+                </td>
+                <td><strong>4 800 руб.</strong></td>
+              </tr>
+              <tr>
+                <td colspan="3">
+                  <div class="total">Итого:<span>34 000</span>руб.</div>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="contact-info done">
+            <h4>Контактная информация</h4>
+            <p>Иванов Иван Иванович <br> +71234567890 <br>г. Москва
+            </p>
+            <p><strong>Способ оплаты:</strong> банковская карта
+            </p>
+            <p><strong>Способ доставки:</strong> ПЭК
+            </p>
+            <div class="send">     <a href="/order.html" class="btn">Изменить</a><a href="/checkout.html" class="btn">Подтвердить заказ</a></div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="site-footer">
+      <seaction id="buy-now">
+        <div class="container">
+          <div class="location"><a id="map-data" href="javascript:void(0)" onclick="openMap()" data-state="0">Где купить</a></div>
+        </div>
+        <div id="map_canvas"></div>
+      </seaction>
+    </div>
+    <footer id="footer">
+      <div class="container">
+        <div class="col-1">
+          <ul class="links">
+            <li>8-800-100-93-21</li>
+            <li><a href="#">mail@certa.ru</a></li>
+          </ul>
+        </div>
+        <div class="col-2"><a id="modal" href="javascript:void(0)" onclick="openModal()" data-state="0" class="btn">Перезвоните мне!</a></div>
+        <div class="col-3">Производство - <a href="http://certa.ru">НПП Спектр</a></div>
+      </div>
+    </footer>
+    <div id="overlay"></div>
+    <div id="modal-form"><a href="javascript:void(0)" onclick="openModal()" data-state="0" class="close"></a>
+      <div class="call-back">
+        <form>
+          <h4>Перезвоните мне</h4>
+          <input type="text" name="" placeholder="Ваше имя">
+          <input type="text" name="" placeholder="Ваш номер телефона">
+          <input type="submit" value="Заказать звонок" class="btn">
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
