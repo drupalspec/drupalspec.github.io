@@ -1,0 +1,323 @@
+@font-face {
+  font-family: "PF Din Text Comp Pro";
+  src: url("../fonts/pfdintextcomppro-thin.eot");
+  src: local('☺'), url("../fonts/pfdintextcomppro-thin.woff") format('woff'), url("../fonts/pfdintextcomppro-thin.ttf") format('truetype'), url("../fonts/pfdintextcomppro-thin.svg") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+input:focus {
+  outline: none;
+}
+body {
+  background: url("../img/bg.jpg") no-repeat 0 15px;
+  color: #7f7f7f;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+}
+.container {
+  width: 980px;
+  margin: 0 auto;
+  position: relative;
+}
+header {
+  height: 100px;
+  background: #f7f7f7;
+  border-bottom: 1px solid #eaeaea;
+}
+ul {
+  margin: 0;
+}
+header .col-1,
+header .col-2,
+header .col-3,
+footer .col-1,
+footer .col-2,
+footer .col-3 {
+  float: left;
+  width: 382px;
+}
+header .col-2,
+footer .col-2 {
+  width: 216px;
+  text-align: center;
+  padding-top: 34px;
+}
+header .col-3,
+footer .col-3 {
+  width: 370px;
+}
+header {
+  color: #303030;
+}
+header .col-3 .cart {
+  float: right;
+  padding-top: 37px;
+  padding-bottom: 87px;
+  font-size: 16px;
+  cursor: pointer;
+  padding-left: 62px;
+  background: url("../img/cart.png") no-repeat 20px 30px;
+}
+header .col-3 .cart:hover + .modal-cart {
+  display: block;
+}
+.links ul,
+.links li {
+  margin: 0;
+  padding: 0;
+}
+.links li {
+  list-style: none;
+  font-size: 16px;
+  background: url("../img/technology.png") no-repeat 0 1px;
+  padding-left: 35px;
+  padding-top: 2px;
+  padding-bottom: 4px;
+  margin-bottom: 5px;
+}
+.links li a {
+  color: #303030;
+}
+.links li a:hover {
+  text-decoration: none;
+}
+.links li:first-child {
+  margin-top: 20px;
+}
+.links li:last-child {
+  background: url("../img/mail.png") no-repeat 0 5px;
+}
+.btn {
+  height: 36px;
+  background-color: #9f79a1;
+  display: inline-table;
+  text-align: center;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  line-height: 34px;
+  padding: 0 20px;
+  border: 0;
+}
+.btn:hover {
+  opacity: 0.8;
+}
+#content .logo {
+  display: block;
+  text-align: center;
+  margin: 55px auto;
+}
+#content nav {
+  text-align: center;
+  margin-bottom: 60px;
+}
+#content nav a {
+  background: url("../img/li.png") no-repeat right 13px;
+  color: #2f2f2f;
+  font-size: 24px;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding-right: 38px;
+  margin-left: 28px;
+}
+#content nav a:hover {
+  color: #9f79a1;
+}
+#content nav a:last-child {
+  background: none;
+}
+#content h1.title {
+  color: #8fc1c1;
+  font-family: "PF Din Text Comp Pro";
+  font-size: 90px;
+  font-weight: normal;
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+}
+#content .product {
+  overflow: hidden;
+}
+#content .product .item {
+  float: left;
+  width: 50%;
+}
+#content .product .item a {
+  display: block;
+  text-align: center;
+  color: #2f2f2f;
+  text-decoration: none;
+}
+#content .product .item a:hover {
+  text-decoration: underline;
+}
+#content .product .item img {
+  margin-bottom: 30px;
+}
+#content .product .item .product-name {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+#buy-now {
+  min-height: 135px;
+  display: block;
+}
+#buy-now .location {
+  display: block;
+  text-align: center;
+}
+#buy-now .location a {
+  color: #a07aa1;
+  text-transform: uppercase;
+  font-size: 24px;
+  padding-top: 60px;
+  display: inline-table;
+  font-weight: 300;
+}
+#buy-now .location a:hover {
+  text-decoration: none;
+}
+#footer {
+  height: 100px;
+  background-color: #f7f7f7;
+  box-shadow: 0 -1px 0 #eaeaea;
+  overflow: hidden;
+}
+#footer .col-3 {
+  text-align: right;
+  margin-top: 40px;
+  color: #2f2f2f;
+  font-size: 16px;
+  font-weight: 300;
+}
+#footer .col-3 a {
+  color: #1893d2;
+}
+#footer .col-3 a:hover {
+  text-decoration: none;
+}
+#overlay {
+  opacity: 0.3;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  background: #000;
+  display: none;
+}
+#modal-form {
+  width: 340px;
+  height: 307px;
+  background: #fff;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin-top: -150px;
+  margin-left: -170px;
+  z-index: 9999;
+  display: none;
+}
+#modal-form .close {
+  background: url("../img/close.png");
+  width: 12px;
+  height: 13px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+}
+#modal-form h4 {
+  color: #2f2f2f;
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+}
+#modal-form input[type="text"] {
+  width: 280px;
+  margin-left: 30px;
+}
+#modal-form input.btn {
+  display: table;
+  margin: 30px auto 0;
+  padding: 0 30px;
+}
+input[type="text"] {
+  height: 40px;
+  background: #f8f8f8;
+  border: 1px solid #ebebeb;
+  color: #a7a7a7;
+  font-size: 14px;
+  display: block;
+  margin-bottom: 13px;
+  padding: 5px 10px;
+  box-sizing: border-box;
+}
+input.btn {
+  height: 39px;
+  line-height: 39px;
+  cursor: pointer;
+}
+.modal-cart {
+  position: absolute;
+  right: 0;
+  width: 274px;
+  background: #f7f7f7;
+  top: 130px;
+  box-sizing: border-box;
+  padding: 18px;
+  border: 1px solid #ededed;
+  z-index: 100;
+  text-align: center;
+  display: none;
+}
+.modal-cart .triangle {
+  width: 0;
+  height: 0;
+  position: absolute;
+  border-style: solid;
+  left: 50%;
+  margin-left: -10px;
+  top: 0;
+  margin-top: -18px;
+  border-width: 0 14px 18px 14px;
+  border-color: transparent transparent #f7f7f7 transparent;
+  z-index: 2;
+}
+.modal-cart .triangle.fake {
+  margin-top: -19px;
+  border-color: transparent transparent #eaeaea transparent;
+  z-index: 1;
+}
+.modal-cart ul {
+  margin: 0 0 20px 0;
+  padding: 0 0 10px 0;
+  border-bottom: 1px solid #eaeaea;
+}
+.modal-cart ul li {
+  list-style: none;
+  margin-bottom: 10px;
+  font-weight: 600;
+  height: 60px;
+  display: block;
+  line-height: 60px;
+  vertical-align: middle;
+  text-align: left;
+}
+.modal-cart ul li img {
+  margin-right: 18px;
+  float: left;
+}
+.modal-cart:hover {
+  display: block;
+}
+#map_canvas {
+  width: 100%;
+  margin: 43px 0;
+  height: 400px;
+  display: none;
+}
