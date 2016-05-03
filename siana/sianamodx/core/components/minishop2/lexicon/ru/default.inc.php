@@ -119,10 +119,10 @@ $_lang['ms2_frontend_street'] = 'Улица';
 $_lang['ms2_frontend_building'] = 'Дом';
 $_lang['ms2_frontend_room'] = 'Комната';
 
-$_lang['ms2_frontend_order_cost'] = 'Итого, с доставкой';
+$_lang['ms2_frontend_order_cost'] = 'К оплате, с доставкой';
 $_lang['ms2_frontend_order_submit'] = 'Сделать заказ!';
 $_lang['ms2_frontend_order_cancel'] = 'Очистить форму';
-$_lang['ms2_frontend_order_success'] = 'Номер вашего заказа <b>#[[+num]]</b>';
+$_lang['ms2_frontend_order_success'] = 'Ваш заказ <b>#[[+num]]</b>';
 
 $_lang['ms2_message_close_all'] = 'закрыть все';
 $_lang['ms2_err_unknown'] = 'Неизвестная ошибка';

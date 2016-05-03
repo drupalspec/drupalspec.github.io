@@ -1,8 +1,8 @@
 <?php  return array (
-  'codemirror' => 
+  'ace' => 
   array (
-    'name' => 'codemirror',
-    'path' => '/Volumes/Media/sianamodx/core/components/codemirror/',
+    'name' => 'ace',
+    'path' => '/Volumes/Media/sianamodx/core/components/ace/',
     'assets_path' => '',
   ),
   'core' => 
@@ -10,6 +10,12 @@
     'name' => 'core',
     'path' => '/Volumes/Media/sianamodx/manager/',
     'assets_path' => '/Volumes/Media/sianamodx/manager/assets/',
+  ),
+  'formit' => 
+  array (
+    'name' => 'formit',
+    'path' => '/Volumes/Media/sianamodx/core/components/formit/',
+    'assets_path' => '/Volumes/Media/sianamodx/assets/components/formit/',
   ),
   'minishop2' => 
   array (
@@ -21,12 +27,6 @@
   array (
     'name' => 'pdotools',
     'path' => '/Volumes/Media/sianamodx/core/components/pdotools/',
-    'assets_path' => '',
-  ),
-  'phpthumbof' => 
-  array (
-    'name' => 'phpthumbof',
-    'path' => '/Volumes/Media/sianamodx/core/components/phpthumbof/',
     'assets_path' => '',
   ),
 );

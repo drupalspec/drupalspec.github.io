@@ -74,12 +74,16 @@ function openModal() {
 
    if(state == '0') {
       data.setAttribute('data-state', '1');
-      overlay.style.display = 'block';
-      modal.style.display = 'block';
+      overlay.style.visibility = 'visible';
+      overlay.style.opacity = '0.3';
+      modal.style.visibility = 'visible';
+      modal.style.opacity = '1';
    } else {
       data.setAttribute('data-state', '0');
-      overlay.style.display = 'none';
-      modal.style.display = 'none';
+      overlay.style.visibility = 'hidden';
+      overlay.style.opacity = '0';
+      modal.style.visibility = 'hidden';
+      modal.style.opacity = '1';
    }
    return;
 };
@@ -103,11 +107,6 @@ function changeItem(item) {
       lastItem.classList.remove("disable");
    };
 
-};
-
-function SomeDeleteRowFunction(item) {
-   var tr = item.parentNode.parentNode;
-   tr.parentNode.removeChild(tr);
 };
 
 function cloneVal(el) {

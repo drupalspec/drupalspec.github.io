@@ -83,13 +83,14 @@ header .col-3 .cart {
   padding-bottom: 87px;
   font-size: 16px;
   cursor: pointer;
-  padding-left: 62px;
-  background: url("../img/cart.png") no-repeat 20px 33px;
+  padding-left: 102px;
+  background: url("../img/cart.png") no-repeat 40px 33px;
   position: relative;
   z-index: 222;
 }
 header .col-3 .cart:hover + .modal-cart {
-  display: block;
+  opacity: 1;
+  visibility: visible;
 }
 .links ul,
 .links li {
@@ -438,7 +439,6 @@ header .col-3 .cart:hover + .modal-cart {
   text-decoration: none;
 }
 #overlay {
-  opacity: 0.3;
   height: 100%;
   left: 0;
   position: fixed;
@@ -446,7 +446,9 @@ header .col-3 .cart:hover + .modal-cart {
   width: 100%;
   z-index: 998;
   background: #000;
-  display: none;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.3s linear;
 }
 #modal-form {
   width: 340px;
@@ -458,7 +460,9 @@ header .col-3 .cart:hover + .modal-cart {
   margin-top: -150px;
   margin-left: -170px;
   z-index: 9999;
-  display: none;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.3s linear;
 }
 #modal-form .close {
   background: url("../img/close.png");
@@ -512,7 +516,9 @@ input.btn {
   border: 1px solid #ededed;
   z-index: 100;
   text-align: center;
-  display: none;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.3s linear;
 }
 .modal-cart .triangle {
   width: 0;
@@ -553,7 +559,8 @@ input.btn {
   border:  1px solid #eee;
 }
 .modal-cart:hover {
-  display: block;
+  opacity: 1;
+  visibility: visible;
 }
 #map_canvas {
   width: 100%;
@@ -605,7 +612,7 @@ input.btn {
 .order table tr td:nth-child(2) input[type="number"] {
   background: none;
   border-radius: 4px;
-  width: 55px;
+  width: 45px;
   height: 30px;
   float: left;
   margin-top: -5px;
@@ -655,7 +662,7 @@ input.btn {
   border-bottom: 0;
 }
 .contact-info {
-  padding: 25px 40px;
+  padding: 25px 40px 35px;
   margin-top: 40px;
   /*height: 366px;*/
   border-radius: 10px;
@@ -702,7 +709,7 @@ input.btn {
   float: left;
 }
 .contact-info .select {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .contact-info .select select {
   width: 445px;
@@ -782,7 +789,7 @@ input[type="radio"]:checked + img {
   color: #303030;
   font-size: 16px;
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 #ms2_order_cost {
   font-weight: 600;
