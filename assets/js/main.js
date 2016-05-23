@@ -13,6 +13,14 @@ $(function() {
         $('.reason2').toggle();
     });
 
+    $('input:radio[name="reason3"]').change(function() {
+        $('.reason3').toggle();
+    });
+
+    $('input:radio[name="reason4"]').change(function() {
+        $('.reason4').toggle();
+    });
+
     $('input:radio[name="notify"]').change(function() {
         $('.notify').toggle();
     });
@@ -36,6 +44,25 @@ $(function() {
     $(document).on('click', '.popup-modal-dismiss', function (e) {
       e.preventDefault();
       $.magnificPopup.close();
+    });
+
+    // ADD tooltip plugin
+    $.tips({
+      action: 'focus',
+      element: '.error',
+      tooltipClass: 'error'
+    });
+    $.tips({
+      action: 'click',
+      element: '.clicktips',
+      tooltipClass: 'warning',
+      preventDefault: true
+    });
+    return $.tips({
+      action: 'hover',
+      element: '.hover',
+      preventDefault: true,
+      html5: false
     });
 
     // $( "section.even label:even" ).css( "border-bottom", "4px solid #FBF9F9" );
