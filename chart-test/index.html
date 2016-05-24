@@ -1,0 +1,333 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Spie Chart</title>
+		<script src="Chart.js"></script>
+		<link rel="stylesheet" href="main.css">
+	</head>
+	<body>
+		<div id="canvas-holder" style="width:427px">
+			<canvas id="chart-area" width="427" height="427"/>
+		</div>
+
+		<div id="my-doughnut-legend">
+
+
+	<script>
+
+		var spieData = [
+				{
+					width: 20,
+					label: "Prepared lists/overview of prospects",
+					slices :
+						[
+							{
+								height: 100,
+								color: "#fff",
+								highlight: "#FF5A5E",
+								label: "1"
+							},
+							{
+								height: 100,
+								color: "#CC1015",
+								highlight: "#ED0C11",
+								label: "2"
+							},
+							{
+								height: 100,
+								color: "#CC1015",
+								highlight: "#ED0C11",
+								label: "3"
+							},
+							{
+								height: 100,
+								color: "#CC1015",
+								highlight: "#ED0C11",
+								label: "4"
+							},
+							{
+								height: 100,
+								color: "#CC1015",
+								highlight: "#ED0C11",
+								label: "5"
+							}
+
+						]
+				},
+				{
+					width: 20,
+					label: "Given offer to prospect",
+					slices :
+						[
+							{
+								height: 100,
+								color: "#fff",
+								highlight: "#55FA68",
+								label: "1"
+							},
+							{
+								height: 100,
+								color: "#fff",
+								highlight: "#23FA3C",
+								label: "1"
+							},
+							{
+								height: 100,
+								color: "#b64449",
+								highlight: "#23FA3C",
+								label: "1"
+							},
+							{
+								height: 100,
+								color: "#c53939",
+								highlight: "#23FA3C",
+								label: "1"
+							},
+							{
+								height: 100,
+								color: "#d92222",
+								highlight: "#23FA3C",
+								label: "1"
+							}
+						]
+				},
+				{
+					width: 20,
+					label: "Blue",
+					slices :
+						[
+							{
+								height: 100,
+								color: "#fff",
+								highlight: "#6284F5",
+								label: "1"
+							},
+							{
+								height: 100,
+								color: "#fff",
+								highlight: "#416CFA",
+								label: "2"
+							},
+							{
+								height: 100,
+								color: "#fff",
+								highlight: "#0C42F5",
+								label: "3"
+							},
+							{
+								height: 100,
+								color: "#fff",
+								highlight: "#0C42F5",
+								label: "4"
+							},
+							{
+								height: 100,
+								color: "#fff",
+								highlight: "#0C42F5",
+								label: "5"
+							}
+						]
+				},
+				{
+					width: 20,
+					label: "Blue",
+					slices :
+						[
+							{
+								height: 100,
+								color: "#fff",
+								highlight: "#6284F5",
+								label: "1"
+							},
+							{
+								height: 100,
+								color: "#fff",
+								highlight: "#416CFA",
+								label: "2"
+							},
+							{
+								height: 100,
+								color: "#fff",
+								highlight: "#0C42F5",
+								label: "3"
+							},
+							{
+								height: 100,
+								color: "#fff",
+								highlight: "#0C42F5",
+								label: "4"
+							},
+							{
+								height: 100,
+								color: "#fff",
+								highlight: "#0C42F5",
+								label: "5"
+							}
+						]
+				},
+				{
+					width: 20,
+					label: "Blue",
+					slices :
+						[
+							{
+								height: 100,
+								color: "#fff",
+								highlight: "#6284F5",
+								label: "1"
+							},
+							{
+								height: 100,
+								color: "#fff",
+								highlight: "#416CFA",
+								label: "2"
+							},
+							{
+								height: 100,
+								color: "#fff",
+								highlight: "#0C42F5",
+								label: "3"
+							},
+							{
+								height: 100,
+								color: "#fff",
+								highlight: "#0C42F5",
+								label: "4"
+							},
+							{
+								height: 100,
+								color: "#fff",
+								highlight: "#0C42F5",
+								label: "5"
+							}
+						]
+				},
+				{
+					width: 20,
+					label: "Blue",
+					slices :
+						[
+							{
+								height: 100,
+								color: "#fff",
+								highlight: "#6284F5",
+								label: "1"
+							},
+							{
+								height: 100,
+								color: "#fff",
+								highlight: "#416CFA",
+								label: "2"
+							},
+							{
+								height: 100,
+								color: "#fff",
+								highlight: "#0C42F5",
+								label: "3"
+							},
+							{
+								height: 100,
+								color: "#fff",
+								highlight: "#0C42F5",
+								label: "4"
+							},
+							{
+								height: 100,
+								color: "#fff",
+								highlight: "#0C42F5",
+								label: "5"
+							}
+						]
+				},
+				{
+					width: 20,
+					label: "Prepared lists/overview of prospects",
+					slices :
+						[
+							{
+								height: 100,
+								color: "#ffd500",
+								highlight: "#6284F5",
+								label: "1"
+							},
+							{
+								height: 100,
+								color: "#fec600",
+								highlight: "#416CFA",
+								label: "2"
+							},
+							{
+								height: 100,
+								color: "#fdc100",
+								highlight: "#0C42F5",
+								label: "3"
+							},
+							{
+								height: 100,
+								color: "#f9af00",
+								highlight: "#0C42F5",
+								label: "4"
+							},
+							{
+								height: 100,
+								color: "#f49700",
+								highlight: "#0C42F5",
+								label: "5"
+							}
+						]
+				},
+				{
+					width: 20,
+					label: "Contacted/ taken initiative to reach prospects",
+					slices :
+						[
+							{
+								height: 100,
+								color: "#fff",
+								highlight: "#ffce56",
+								label: "1"
+							},
+							{
+								height: 100,
+								color: "#fff",
+								highlight: "#F6FA87",
+								label: "2"
+							},
+							{
+								height: 100,
+								color: "#fff",
+								highlight: "#FAFF78",
+								label: "3"
+							},
+							{
+								height: 100,
+								color: "#ef7700",
+								highlight: "#F2F759",
+								label: "5"
+							},
+							{
+								height: 100,
+								color: "#f07e00",
+								highlight: "#F1F73E",
+								label: "5"
+							}
+						]
+				}
+
+			];
+
+			window.onload = function(){
+				var ctx = document.getElementById("chart-area").getContext("2d");
+				window.mySpie = new Chart(ctx).Spie(spieData, {
+					responsive:false
+				});
+
+				//var legendHolder = document.getElementById('my-doughnut-legend')
+				//legendHolder.innerHTML = mySpie.generateLegend();
+			};
+
+
+
+	</script>
+	</body>
+</html>
