@@ -55,7 +55,7 @@ $(function() {
           action: 'click',
           element: '.clicktips',
           tooltipClass: 'error',
-          tailLength: 15,
+          tailLength: 14,
           preventDefault: true
         });
         

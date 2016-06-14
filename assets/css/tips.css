@@ -9,12 +9,23 @@ div.tooltip {
   background: #222;
   color: #fff;
   display: none;
-  font-size: 16px;
+  font-size: 14px;
   margin: 0;
   max-width: 250px;
   padding: 9px 13px;
   position: absolute;
   z-index: 100;
+  line-height: 1.4;
+}
+
+aside.tooltip ul,
+div.tooltip ul {
+  margin-left: 10px !important;
+  padding-left: 0 !important;
+}
+div.tooltip.status,
+aside.tooltip.status {
+    max-width: 480px;
 }
 aside.tooltip h1,
 div.tooltip h1 {
@@ -96,31 +107,31 @@ div.tooltip.top:after {
 }
 aside.tooltip.error,
 div.tooltip.error {
-  background: #ea5b54;
+  background: #ce352c;
 }
 aside.tooltip.error:after,
 div.tooltip.error:after {
-  border-right-color: #ea5b54;
+  border-right-color: #ce352c;
 }
 aside.tooltip.error.left:after,
 div.tooltip.error.left:after {
   border-right-color: transparent;
-  border-left-color: #ea5b54;
+  border-left-color: #ce352c;
 }
 aside.tooltip.error.right:after,
 div.tooltip.error.right:after {
   border-right-color: transparent;
-  border-right-color: #ea5b54;
+  border-right-color: #ce352c;
 }
 aside.tooltip.error.bottom:after,
 div.tooltip.error.bottom:after {
   border-right-color: transparent;
-  border-bottom-color: #ea5b54;
+  border-bottom-color: #ce352c;
 }
 aside.tooltip.error.top:after,
 div.tooltip.error.top:after {
   border-right-color: transparent;
-  border-top-color: #ea5b54;
+  border-top-color: #ce352c;
 }
 aside.tooltip.warning,
 div.tooltip.warning {
@@ -150,4 +161,34 @@ aside.tooltip.warning.top:after,
 div.tooltip.warning.top:after {
   border-right-color: transparent;
   border-top-color: #ffe38e;
+}
+
+aside.tooltip.status,
+div.tooltip.status {
+  color: #fff;
+  background: #60a917;
+}
+aside.tooltip.status:after,
+div.tooltip.status:after {
+  border-right-color: #60a917;
+}
+aside.tooltip.status.left:after,
+div.tooltip.status.left:after {
+  border-right-color: transparent;
+  border-left-color: #60a917;
+}
+aside.tooltip.status.right:after,
+div.tooltip.status.right:after {
+  border-right-color: transparent;
+  border-right-color: #60a917;
+}
+aside.tooltip.status.bottom:after,
+div.tooltip.status.bottom:after {
+  border-right-color: transparent;
+  border-bottom-color: #60a917;
+}
+aside.tooltip.status.top:after,
+div.tooltip.status.top:after {
+  border-right-color: transparent;
+  border-top-color: #60a917;
 }

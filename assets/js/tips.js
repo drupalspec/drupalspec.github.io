@@ -74,6 +74,15 @@
         };
         showTooltip = function(ele) {
           var direction, elementHeightAdjustment, elementWidthAdjustment, html, leftPosition, offset, rightPosition, tooltipElement, tooltipHeightAdjustment, tooltipWidthAdjustment, topPosition;
+          if (ele.attr('data-tooltip-class')) {
+            settings.tooltipClass = ele[0].dataset.tooltipClass;
+            $(tooltipElement).addClass('tooltip ' + settings.tooltipClass);
+          } else {
+            settings.tooltipClass = 'error';
+            $(tooltipElement).addClass('tooltip ' + settings.tooltipClass);
+          }
+
+
           if (ele.attr('data-tooltip')) {
             hideTooltip();
             html = replaceCharacters(ele.attr('data-tooltip'));
