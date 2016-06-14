@@ -33,37 +33,34 @@ $(function() {
         $('.notify3').toggle();
         $('.notify2').toggle();
     });
+    
+  
+      if(window.location.pathname.search('wizard_fr') > 0) { // For FR Wizard only
+        //Modal
+        $('.popup-modal').magnificPopup({
+          type: 'inline',
+          preloader: false,
+          focus: '#username',
+          modal: true
+        });
+        $(document).on('click', '.popup-modal-dismiss', function (e) {
+          e.preventDefault();
+          $.magnificPopup.close();
+        });
+      }
 
-    //Modal
-    $('.popup-modal').magnificPopup({
-      type: 'inline',
-      preloader: false,
-      focus: '#username',
-      modal: true
-    });
-    $(document).on('click', '.popup-modal-dismiss', function (e) {
-      e.preventDefault();
-      $.magnificPopup.close();
-    });
+      if(window.location.pathname.search('wizard_ge') > 0) { // For GE Wizard only
+        // ADD tooltip plugin
+        $.tips({
+          action: 'click',
+          element: '.clicktips',
+          tooltipClass: 'error',
+          tailLength: 15,
+          preventDefault: true
+        });
+        
+      }
 
-    // ADD tooltip plugin
-    $.tips({
-      action: 'focus',
-      element: '.error',
-      tooltipClass: 'error'
-    });
-    $.tips({
-      action: 'click',
-      element: '.clicktips',
-      tooltipClass: 'warning',
-      preventDefault: true
-    });
-    return $.tips({
-      action: 'hover',
-      element: '.hover',
-      preventDefault: true,
-      html5: false
-    });
 
     // $( "section.even label:even" ).css( "border-bottom", "4px solid #FBF9F9" );
 });
