@@ -33,9 +33,10 @@ $(function() {
         $('.notify3').toggle();
         $('.notify2').toggle();
     });
+
     
   
-      if(window.location.pathname.search('wizard_fr') > 0) { // For FR Wizard only
+      if(window.location.pathname.search('wizard_fr') > 0 || window.location.pathname.search('wizard_ge_mtco') > 0) { // For FR Wizard only
         //Modal
         $('.popup-modal').magnificPopup({
           type: 'inline',
@@ -62,7 +63,16 @@ $(function() {
       }
 
 
+      $( ".open-text" ).click(function() {
+        $(this).parent().parent().find('.text-box').slideToggle('fast');
+        $(this).toggleClass('open');
+        // $(this).parent().parent().show();
+      });
+
+
     // $( "section.even label:even" ).css( "border-bottom", "4px solid #FBF9F9" );
 });
+
+
 
 
