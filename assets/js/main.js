@@ -66,8 +66,9 @@ $(function() {
       $( ".open-text" ).click(function() {
         $(this).parent().parent().find('.text-box').slideToggle('fast');
         $(this).toggleClass('open');
-        // $(this).parent().parent().show();
       });
+
+      
 
 
     // $( "section.even label:even" ).css( "border-bottom", "4px solid #FBF9F9" );
