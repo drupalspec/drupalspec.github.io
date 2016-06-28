@@ -68,7 +68,9 @@ $(function() {
         $(this).toggleClass('open');
       });
 
-      
+      $( "input[name='radioUkMtco']" ).change(function() {
+        $('.wizard-navigation.show, .wizard-navigation.hide').toggle();
+      });
 
 
     // $( "section.even label:even" ).css( "border-bottom", "4px solid #FBF9F9" );
