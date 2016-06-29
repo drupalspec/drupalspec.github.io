@@ -36,7 +36,10 @@ $(function() {
 
     
   
-      if(window.location.pathname.search('wizard_fr') > 0 || window.location.pathname.search('wizard_ge_mtco') > 0) { // For FR Wizard only
+      if(window.location.pathname.search('wizard_fr') > 0 || 
+        window.location.pathname.search('wizard_ge_mtco') > 0 || 
+        window.location.pathname.search('wizard_ge') > 0
+        ) { // For FR Wizard only
         //Modal
         $('.popup-modal').magnificPopup({
           type: 'inline',
@@ -50,17 +53,17 @@ $(function() {
         });
       }
 
-      if(window.location.pathname.search('wizard_ge') > 0) { // For GE Wizard only
-        // ADD tooltip plugin
-        $.tips({
-          action: 'click',
-          element: '.clicktips',
-          tooltipClass: 'error',
-          tailLength: 14,
-          preventDefault: true
-        });
+      // if(window.location.pathname.search('wizard_ge') > 0) { // For GE Wizard only
+      //   // ADD tooltip plugin
+      //   $.tips({
+      //     action: 'click',
+      //     element: '.clicktips',
+      //     tooltipClass: 'error',
+      //     tailLength: 14,
+      //     preventDefault: true
+      //   });
         
-      }
+      // }
 
 
       $( ".open-text" ).click(function() {
