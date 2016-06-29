@@ -75,6 +75,10 @@ $(function() {
         $('.wizard-navigation.show, .wizard-navigation.hide').toggle();
       });
 
+      // $("input.onchange").change(function() {
+      //   $( "button").removeAttr("disabled");
+      // });
+
 
     // $( "section.even label:even" ).css( "border-bottom", "4px solid #FBF9F9" );
 });
