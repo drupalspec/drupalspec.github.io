@@ -53,17 +53,6 @@ $(function() {
         });
       }
 
-      // if(window.location.pathname.search('wizard_ge') > 0) { // For GE Wizard only
-      //   // ADD tooltip plugin
-      //   $.tips({
-      //     action: 'click',
-      //     element: '.clicktips',
-      //     tooltipClass: 'error',
-      //     tailLength: 14,
-      //     preventDefault: true
-      //   });
-        
-      // }
 
 
       $( ".open-text" ).click(function() {
@@ -74,13 +63,33 @@ $(function() {
       $( "input[name='radioUkMtco']" ).change(function() {
         $('.wizard-navigation.show, .wizard-navigation.hide').toggle();
       });
+  
+      //  For no active sidebar menu item
+      var parents = $('ul.sidebar-nav li.active ').parent().children();
+      for(i = 0; i < parents.length; i++) {
+        var hasClass = parents[i].className;
 
-      // $("input.onchange").change(function() {
-      //   $( "button").removeAttr("disabled");
-      // });
+        if(parents[i].className) {break;}
+          parents[i].className = 'disable'; 
+        }
 
 
-    // $( "section.even label:even" ).css( "border-bottom", "4px solid #FBF9F9" );
+      // For french wizzard
+      $(window).load(function() {
+        var radoiCount = $('input[type=radio]').size() / 2;
+        radoiCount = Math.floor(radoiCount);
+        if(window.location.pathname.search('wizard_fr') > 0 && window.location.pathname.search('step-6.html') > 0) {
+          radoiCount = radoiCount - 1;
+        }
+  
+        $('input[type="radio"]').change(function() {
+          var size = $('input[type=radio]:checked').size();
+          if(size == radoiCount) {
+            $( "button").removeAttr("disabled");
+          }
+        });
+      });
+
 });
 
 
