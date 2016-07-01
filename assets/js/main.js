@@ -65,7 +65,7 @@ $(function() {
       });
   
       //  For no active sidebar menu item
-      var parents = $('ul.sidebar-nav li.active ').parent().children();
+      var parents = $('.fr-wizard ul.sidebar-nav li.active ').parent().children();
       for(i = 0; i < parents.length; i++) {
         var hasClass = parents[i].className;
 
@@ -76,14 +76,14 @@ $(function() {
 
       // For french wizzard
       $(window).load(function() {
-        var radoiCount = $('input[type=radio]').size() / 2;
+        var radoiCount = $('.fr-wizard input[type=radio]').size() / 2;
         radoiCount = Math.floor(radoiCount);
         if(window.location.pathname.search('wizard_fr') > 0 && window.location.pathname.search('step-6.html') > 0) {
           radoiCount = radoiCount - 1;
         }
   
-        $('input[type="radio"]').change(function() {
-          var size = $('input[type=radio]:checked').size();
+        $('.fr-wizard input[type="radio"]').change(function() {
+          var size = $('.fr-wizard input[type=radio]:checked').size();
           if(size == radoiCount) {
             $( "button").removeAttr("disabled");
           }
