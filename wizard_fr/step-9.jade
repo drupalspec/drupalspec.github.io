@@ -1,0 +1,66 @@
+h2 DTCO general checking
+fieldset
+    section
+        .grid
+            .row.cells12
+                .cell.colspan5
+                    h4.titop  Number of sealing replaced
+                .cell.colspan7
+                    .input-control.text.full-size
+                        input(type="text")
+
+    section
+      .grid
+          .row.cells6
+              .cell.colspan4
+                  h4.ontop Display compliant 
+        
+                    a.popup-modal.clicktips(href='#test-modal-1') ?
+                    #test-modal-1.mfp-hide.white-popup-block
+                      h3 Description
+                      p The display should be readable
+                        .clearfix
+                        a.button.large-button.primary.popup-modal-dismiss(href='#') Close
+
+              .cell.colspan2
+                  label.input-control.radio
+                      input.onchange(type="radio", name="341")
+                      span.check
+                      span.caption  Oui
+                  label.input-control.radio
+                      input.onchange(type="radio", name="341")
+                      span.check
+                      span.caption  Non
+
+    section
+      .grid
+          .row.cells6
+              .cell.colspan4
+                  h4.ontop Keyboard compliant 
+        
+                    a.popup-modal.clicktips(href='#test-modal-2') ?
+                    #test-modal-2.mfp-hide.white-popup-block
+                      h3 Description
+                      p All the key should work well.
+                        .clearfix
+                        a.button.large-button.primary.popup-modal-dismiss(href='#') Close
+
+              .cell.colspan2
+                  label.input-control.radio
+                      input.onchange(type="radio", name="342")
+                      span.check
+                      span.caption  Oui
+                  label.input-control.radio
+                      input.onchange(type="radio", name="342")
+                      span.check
+                      span.caption  Non
+
+fieldset.onbottom
+  section
+    .grid
+      .row.cells3
+        .cell
+          button.button.large-button.primary.full-size Prev
+        .cell
+        .cell
+          button.button.large-button.primary.full-size(disabled="disabled") Next

@@ -1,0 +1,64 @@
+h2 Vehicle reception
+fieldset
+  section
+      .grid
+          .row.cells6
+              .cell.colspan4
+                  h4.ontop Vehicle empty 
+        
+                    a.popup-modal.clicktips(href='#test-modal-1') ?
+                    #test-modal-1.mfp-hide.white-popup-block
+                      h3 Description
+                      p Vehicle should be empty for inspection…
+                        .clearfix
+                        a.button.large-button.primary.popup-modal-dismiss(href='#') Close
+
+              .cell.colspan2
+                  label.input-control.radio
+                      input(type="radio", name="341")
+                      span.check
+                      span.caption  Oui
+                  label.input-control.radio
+                      input(type="radio", name="341")
+                      span.check
+                      span.caption  Non
+
+  section
+      .grid
+          .row.cells6
+              .cell.colspan4
+                  h4.ontop Pneumatic are compliant ? 
+        
+                    a.popup-modal.clicktips(href='#test-modal-2') ?
+                    #test-modal-2.mfp-hide.white-popup-block
+                      h3 Description
+                      p Pneumatic should be compliant regarding laws requirement (wear, pressure…)
+                        .clearfix
+                        a.button.large-button.primary.popup-modal-dismiss(href='#') Close
+
+              .cell.colspan2
+                  label.input-control.radio
+                      input(type="radio", name="342")
+                      span.check
+                      span.caption  Oui
+                  label.input-control.radio
+                      input(type="radio", name="342")
+                      span.check
+                      span.caption  Non
+      
+  
+
+
+
+
+
+
+
+fieldset.onbottom
+  section
+    .grid
+      .row.cells3
+        .cell
+        .cell
+        .cell
+          button.button.large-button.primary.full-size(disabled="disabled") Next

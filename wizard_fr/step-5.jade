@@ -1,0 +1,88 @@
+h2 Tyre datas
+fieldset
+    section
+        .grid
+            .row.cells12
+                .cell.colspan5
+                    h4.titop Tyre brand
+                .cell.colspan7
+                    .input-control.select.full-size
+                        select
+                            option Bridgestone
+                            option Continental
+                            option Other
+
+    section
+        .grid
+            .row.cells12
+                .cell.colspan5
+                    h4.titop Tyre dimension is
+                .cell.colspan7
+                    .input-control.text.full-size
+                        input(type="text", placeholder="315/70 R22.5")
+
+    section
+        .grid
+            .row.cells12
+                .cell.colspan8
+                    h4.puls-bottom Confirm tyre size
+                .cell.colspan2
+                    button.button.large-button.primary.full-size OK
+                .cell.colspan2
+                    button.button.large-button.primary.full-size Adjust
+
+    section
+        header
+            h3 Tyre type
+
+    section
+        .grid
+            .row.cells12
+                .cell.colspan5
+                    h4.titop Pressure expected (bar)
+                .cell.colspan7
+                    .input-control.text.full-size
+                        input(type="text")
+
+    section
+        .grid
+            .row.cells12
+                .cell.colspan5
+                    h4.titop Pressure set (bar) 
+                        a.popup-modal.clicktips(href='#test-modal-1') ?
+                        #test-modal-1.mfp-hide.white-popup-block
+                          h3 Description
+                          p For pressure adjustement check on …. 
+                            .clearfix
+                            a.button.large-button.primary.popup-modal-dismiss(href='#') Close
+                .cell.colspan7
+                    .input-control.text.full-size
+                        input(type="text")
+
+    section
+        .grid
+            .row.cells12
+                .cell.colspan5
+                    h4.titop Mesurement L method 
+                        a.popup-modal.clicktips(href='#test-modal-2') ?
+                        #test-modal-2.mfp-hide.white-popup-block
+                          h3 Description
+                          p For L automatic L has to be upper than 2400 mm
+
+                            .clearfix
+                            a.button.large-button.primary.popup-modal-dismiss(href='#') Close
+                .cell.colspan7
+                    .input-control.select.full-size
+                        select
+                            option L Automatic
+                            option Ruler
+
+fieldset.onbottom
+  section
+    .grid
+      .row.cells3
+        .cell
+          button.button.large-button.primary.full-size Prev
+        .cell
+        .cell
+          button.button.large-button.primary.full-size Next

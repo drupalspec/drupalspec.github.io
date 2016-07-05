@@ -1,0 +1,148 @@
+h2 Security Check and creating of inspection report
+fieldset
+  section
+    button.button.large-button.primary.right-pull  Open the function Manipulation check and follow the instructions   
+    .pull-left-tip
+      a.popup-modal.clicktips(href='#test-modal-1') ?
+      label.input-control.checkbox
+        input(type='checkbox', name='checkbox1')
+        span.check
+br
+fieldset
+  section
+      .grid
+          .row.cells6
+              .cell.colspan4
+                  h4.ontop
+                    | Are visible manipulation hints at the tachograph system recognizable (sealing, defects, ect.)? 
+                    a.popup-modal.clicktips(href='#test-modal-2') ?
+              .cell.colspan2
+                  label.input-control.radio
+                      input(type="radio", name="reason", checked)
+                      span.check
+                      span.caption  OK
+                  label.input-control.radio
+                      input(type="radio", name="reason")
+                      span.check
+                      span.caption  Not OK
+      .grid.reason
+          .row.cells12
+              .cell.colspan5
+                  h4.titop Enter the reason
+              .cell.colspan7
+                  .input-control.text.full-size
+                      input(type="text")
+  section
+      .grid
+          .row.cells6
+              .cell.colspan4
+                  h4.ontop
+                    | Visible control DTCO 
+                    a.popup-modal.clicktips(href='#test-modal-3') ?
+              .cell.colspan2
+                  label.input-control.radio
+                      input(type="radio", name="reason2", checked)
+                      span.check
+                      span.caption  OK
+                  label.input-control.radio
+                      input(type="radio", name="reason2")
+                      span.check
+                      span.caption  Not OK
+      .grid.reason2
+          .row.cells12
+              .cell.colspan5
+                  h4.titop Enter the reason
+              .cell.colspan7
+                  .input-control.text.full-size
+                      input(type="text")
+  
+  section
+    .grid
+      .row.cells6
+        .cell.colspan4
+          h4.ontop 
+            | Visible control KITAS 
+            a.popup-modal.clicktips(href='#test-modal-4') ?
+        .cell.colspan2
+          label.input-control.radio
+            input(type='radio', name='reason3', checked='checked')
+            span.check
+            span.caption  OK
+          label.input-control.radio
+            input(type='radio', name='reason3')
+            span.check
+            span.caption  Not OK
+    .grid.reason3
+          .row.cells12
+              .cell.colspan5
+                  h4.titop Enter the reason
+              .cell.colspan7
+                  .input-control.text.full-size
+                      input(type="text")
+  section
+    .grid
+      .row.cells6
+        .cell.colspan4
+          h4.ontop 
+            | Maintainance DTCO 
+            a.popup-modal.clicktips(href='#test-modal-5') ?
+        .cell.colspan2
+          label.input-control.radio
+            input(type='radio', name='reason4', checked='checked')
+            span.check
+            span.caption  OK
+          label.input-control.radio
+            input(type='radio', name='reason4')
+            span.check
+            span.caption  Not OK
+    .grid.reason4
+          .row.cells12
+              .cell.colspan5
+                  h4.titop Enter the reason
+              .cell.colspan7
+                  .input-control.text.full-size
+                      input(type="text")
+  span.hint-color-custom Hint for vehicles with IMS
+
+fieldset.onbottom
+  section
+    .grid
+      .row.cells3
+        .cell
+          button.button.large-button.primary.full-size Prev
+        .cell
+        .cell
+          button.button.large-button.primary.full-size Next
+
+
+#test-modal-1.mfp-hide.white-popup-block
+  h3 Description
+  p - If no Manipulation Check Licence available the interpretation and review of possible suspected breaches in “events and faults” since last calibration is done according to Service Info No. 116216 No.2.<br><br>- Function check download interface. Check for possible suspected breaches in “events and faults” (Quickcheck)<br><br>- After the Quickcheck, process the handling instructions of the respective manufacturer
+    .clearfix
+    a.button.large-button.primary.popup-modal-dismiss(href='#') Close
+
+#test-modal-2.mfp-hide.white-popup-block
+  h3 Description
+  p Please note such hints later in the inspection report. If required exchange the TCO
+    .clearfix
+    a.button.large-button.primary.popup-modal-dismiss(href='#') Close
+
+#test-modal-3.mfp-hide.white-popup-block
+  h3 Description
+  p TCO housing (manufacturer sealing), battery case, sealing foil (as of Rel. 2.2)<br><ul><li>TCO type plate, old installation plaque</li><li>Electrical connector block, KITAS cable on sensor (please consider coutry specific requirements)</li><li>TCO Housing demages</li><li>Sealing foil (DTCO Rel. 2.2), compare the serialnumber with the print out</li>
+    .clearfix
+    a.button.large-button.primary.popup-modal-dismiss(href='#') Close
+
+#test-modal-4.mfp-hide.white-popup-block
+  h3 Description
+  p KITAS at the gearbox against screw looseing<br><ul><li>Housing demages</li><li>Magnet in the KITAS environment</li><li>Viewable scratches on KITAS housing</li><li>Available/damaged/data correct? All sealings must be signed</li>
+    .clearfix
+    a.button.large-button.primary.popup-modal-dismiss(href='#') Close
+
+#test-modal-5.mfp-hide.white-popup-block
+  h3 Description
+  p DTCO® 1381 Service: exchange buffer battery. Re-new sealing at the battery case accordingly. Glue sticker “next battery exchange” <br><ul><li><b>Before the power supply is interrupted, the battery should be re-newed to avoid damages of the DTCO®</b></li></ul>
+    .clearfix
+    a.button.large-button.primary.popup-modal-dismiss(href='#') Close
+
+

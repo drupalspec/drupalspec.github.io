@@ -1,0 +1,84 @@
+h2 Common Test Steps
+fieldset
+  section.even
+    label.input-control.checkbox
+      input(type='checkbox', name='checkbox1')
+      span.check.place-right
+      span.caption  
+        | Are the tyres on the drive axle permitted for this vehicle? 
+        //- a.clicktips(href='#', data-tooltip='This tooltip is awesome', data-tooltip-direction='bottom', tabindex='0') ? data-tooltip-class="status"
+  
+    label.input-control.checkbox
+      input(type='checkbox', name='checkbox2')
+      span.check.place-right
+      span.caption  
+        | Does the tread depth of tyres on the drive shaft comply with the legal requirements?
+        //- a.clicktips(href='#', data-tooltip='This tooltip is awesome', data-tooltip-direction='bottom', tabindex='0') ? data-tooltip-class="status"
+  
+
+  section
+    .grid
+      .row.cells12
+        .cell.colspan4
+          h4.titop Tread depth
+        .cell.colspan7
+          .input-control.text.full-size
+            input(type='text')
+        .cell.colspan1.unit
+          small / mm
+br
+fieldset
+  section
+    label.input-control.checkbox
+      input(type='checkbox', name='checkbox1')
+      span.check.place-right
+      span.caption  
+        | Are no tieres with different dimensions mounted on the drive shaft? 
+        a.popup-modal.clicktips(href='#test-modal-1') ?
+        #test-modal-1.mfp-hide.white-popup-block
+          h3 Description
+          p With mixed tyres perform no calibration. Also note re-cut tyres on back side of the calibration report.
+            .clearfix
+            a.button.large-button.primary.popup-modal-dismiss(href='#') Close
+
+  section
+    .grid
+      .row.cells12
+        .cell.colspan4
+          h4.titop Tyre size
+        .cell.colspan7
+          .input-control.text.full-size
+            input(type='text', placeholder="")
+        .cell.colspan1
+  section
+    label.input-control.checkbox
+      input(type='checkbox', name='checkbox1')
+      span.check.place-right
+      h4.ontop
+        | Is the tire pressure on all wheels of the driving axle in accordance with the manufacturer’s instructions? 
+        a.popup-modal.clicktips(href='#test-modal-2') ?
+        #test-modal-2.mfp-hide.white-popup-block
+          h3 Description
+          p Tire pressure of all wheels (twin-tyred vehicles also the 'inner' wheels) on the drive shaft must correspond to the manufacturer's requirements. Adapt if required.
+            .clearfix
+            a.button.large-button.primary.popup-modal-dismiss(href='#') Close
+
+
+  section
+    .grid
+      .row.cells12
+        .cell.colspan4
+          h4.titop Tire pressure
+        .cell.colspan7
+          .input-control.text.full-size
+            input(type='text')
+        .cell.colspan1.unit
+          small / bar
+fieldset.onbottom
+  section
+    .grid
+      .row.cells3
+        .cell
+        .cell
+        .cell
+          button.button.large-button.primary.full-size Next

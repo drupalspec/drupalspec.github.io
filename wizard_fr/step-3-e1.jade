@@ -1,0 +1,27 @@
+h2 Vehicle datas checking
+
+fieldset.custom
+  section
+    .grid
+      .row.cells12
+          .cell.colspan6
+            label.input-control.radio
+              input.wizzard-change(type='radio', name='radio1', onchange='goToAll();',)
+              span.check
+              span.caption For all
+          .cell.colspan6
+            label.input-control.radio
+              input.wizzard-change(type='radio', name='radio1', checked='checked')
+              span.check
+              span.caption  It is a E1
+  
+
+fieldset.onbottom
+  section
+    .grid
+      .row.cells3
+        .cell
+          button.button.large-button.primary.full-size Prev
+        .cell
+        .cell
+          button.button.large-button.primary.full-size(disabled="disabled") Next

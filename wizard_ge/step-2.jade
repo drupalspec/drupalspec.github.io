@@ -1,0 +1,113 @@
+h2 Testing of Device’s Functions
+fieldset
+  //- a.popup-modal(href='#test-modal') Hint!!
+  //- #test-modal.mfp-hide.white-popup-block
+  //-     h1 Hint
+  //-     p
+  //-       | Voluptatibus rerum distinctio quam, magnam veniam necessitatibus reiciendis sunt qui, possimus provident autem dolore, obcaecati numquam similique sed cumque.
+  //-     p
+  //-       a.popup-modal-dismiss(href='#') Dismiss
+  //- br
+  //- br
+  section.even
+    label.input-control.checkbox
+      input(type='checkbox', name='checkbox1')
+      span.check.place-right
+      span.caption  
+        | Switch on Ignition 
+        a.popup-modal.clicktips(href='#test-modal-1') ?
+    span.hint-color Here should be stand the text if the technician click on the Question Mark
+  
+    label.input-control.checkbox
+      input(type='checkbox', name='checkbox2')
+      span.check.place-right
+      span.caption  
+        | Select printout 'Technical Data' 
+        a.popup-modal.clicktips(href='#test-modal-2') ?
+    label.input-control.checkbox
+      input(type='checkbox', name='checkbox3')
+      span.check.place-right
+      span.caption  
+        | Generate Technical Data Printout 
+        a.popup-modal.clicktips(href='#test-modal-3') ?
+    label.input-control.checkbox
+      input(type='checkbox', name='checkbox4')
+      span.check.place-right
+      span.caption  
+        | Check the functions of the TCO control buttons. 
+        a.popup-modal.clicktips(href='#test-modal-4') ?
+    label.input-control.checkbox
+      input(type='checkbox', name='checkbox5')
+      span.check.place-right
+      span.caption  
+        | Check the function of the card slot 
+        a.popup-modal.clicktips(href='#test-modal-5') ?
+    label.input-control.checkbox
+      input(type='checkbox', name='checkbox4')
+      span.check.place-right
+      span.caption  
+        | Clean the Card slot 
+        a.popup-modal.clicktips(href='#test-modal-6') ?
+    label.input-control.checkbox
+      input(type='checkbox', name='checkbox5')
+      span.check.place-right
+      span.caption  
+        | Insert the Workshopcard in to the device and enter the PIN 
+        a.popup-modal.clicktips(href='#test-modal-7') ?
+fieldset.onbottom
+  section
+    .grid
+      .row.cells3
+        .cell
+          button.button.large-button.primary.full-size Prev
+        .cell
+        .cell
+          button.button.large-button.primary.full-size Next
+
+
+#test-modal-1.mfp-hide.white-popup-block
+    h3 Description
+    p <b>Vehicles with IMS:</b> If ignition is „off“ the symbol for IMS function must appear on the display right beside the operating mode symbol.  If the Ignition is „on“ this IMS symbol must disappear. After at least one minute neither “motion conflict” nor “IMS error” may appear.
+      .clearfix
+      a.button.large-button.primary.popup-modal-dismiss(href='#') Close
+
+#test-modal-2.mfp-hide.white-popup-block
+  h3 Description
+  p Unlock the printer drawer, remove the paper roll. Does the type approval mark exist? <br>Confirm the selection (printout "Technical Data") with OK.<br>Comes the message  "drawer open 38"? <br>Confirm the message with OK and close the drawer. <br>Again confirm the selection (printout "Technical Data") with OK. <br>Comes the message "no paper 39"? <br>Confirm the message with OK.
+    .clearfix
+    a.button.large-button.primary.popup-modal-dismiss(href='#') Close
+
+
+#test-modal-3.mfp-hide.white-popup-block
+  h3 Description
+  p Compare printed calibration data VIN, VRN, tyre size with the original vehicle data. <br>Are data on printout, certificate of acceptance and installation plaque identical? If not localise the cause and react accordingly.<br><br><b>Vehicle with IMS*</b>: The last data block shows the IMS configuration if a DTCO® with IMS- function ic concerned.<br><ul><li><b>Important information:</b> Vehicles which have been first time registered after 01.10.2012 or vehicles which are obliged firs time for control device after this date a third generation control devcie (second independend motion signal and KITAS2+) must be build in. The treatment of the second independend speed signal (IMS) must be activated. See Service Info 116289</li></ul>
+    .clearfix
+    a.button.large-button.primary.popup-modal-dismiss(href='#') Close
+
+
+
+#test-modal-4.mfp-hide.white-popup-block
+    h3 Description
+    p Test activity keys for driver 1 / 2: do they react accordingly (attend display)
+      .clearfix
+      a.button.large-button.primary.popup-modal-dismiss(href='#') Close
+
+#test-modal-5.mfp-hide.white-popup-block
+  h3 Description
+  p Does card slot 2 work accordingly? Insert workshop card in slot 2. If the pin is required eject the card.
+    .clearfix
+    a.button.large-button.primary.popup-modal-dismiss(href='#') Close
+
+
+#test-modal-6.mfp-hide.white-popup-block
+  h3 Description
+  p DTCO® 1381 Service: Clean card slots with the cleaning cards provided by the manufacturer. Cleaning of the cardslots must not be conducted compulsory in conjunction with a workshop card when the DTCO’s error memory is deleted afterwards.also the 'inner' wheels) on the drive shaft must correspond to the manufacturer's requirements. Adapt if required.
+    .clearfix
+    a.button.large-button.primary.popup-modal-dismiss(href='#') Close
+
+
+#test-modal-7.mfp-hide.white-popup-block
+  h3 Description
+  p Workshop card remains in the tachograph
+    .clearfix
+    a.button.large-button.primary.popup-modal-dismiss(href='#') Close

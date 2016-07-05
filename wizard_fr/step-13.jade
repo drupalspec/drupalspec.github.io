@@ -1,0 +1,44 @@
+h2 Vehicle 1000 m distance test
+fieldset
+    section
+        h4 Start the 1000 m distance test
+        button.button.large-button.primary.full-size Start 1000 m distance test
+
+    section
+        .grid
+            .row.cells12
+                .cell.colspan8
+                    h4.puls-bottom Insert Card in reader 2 
+                .cell.colspan4
+                    button.button.large-button.primary.full-size Send PIN
+    br
+    br
+    section
+        header
+          h3  Print the 6 tickets required by regulation
+                
+    section
+      .grid
+          .row.cells6
+              .cell.colspan4
+                  h4.ontop Datas on the 6 tickets are compliant ?
+
+              .cell.colspan2
+                  label.input-control.radio
+                      input.onchange(type="radio", name="342")
+                      span.check
+                      span.caption  Oui
+                  label.input-control.radio
+                      input.onchange(type="radio", name="342")
+                      span.check
+                      span.caption  Non
+  
+fieldset.onbottom
+  section
+    .grid
+      .row.cells3
+        .cell
+          button.button.large-button.primary.full-size Prev
+        .cell
+        .cell
+          button.button.large-button.primary.full-size(disabled="disabled") Next

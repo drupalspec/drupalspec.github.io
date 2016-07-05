@@ -1,0 +1,109 @@
+h2 Label data checking
+fieldset
+  section
+     button.button.large-button.primary.full-size In case of E1, press that button
+     .clearfix
+   section
+      .grid
+          .row.cells6
+              .cell.colspan4
+                  h4.ontop Label available ?  
+              .cell.colspan2
+                  label.input-control.radio
+                      input.onchange(type="radio", name="341")
+                      span.check
+                      span.caption  Oui
+                  label.input-control.radio
+                      input.onchange(type="radio", name="341")
+                      span.check
+                      span.caption  Non
+    section
+        .grid
+            .row.cells6
+                .cell.colspan4
+                    h4.ontop  Label damaged ? 
+                .cell.colspan2
+                    label.input-control.radio
+                        input.onchange(type="radio", name="342")
+                        span.check
+                        span.caption  Oui
+                    label.input-control.radio
+                        input.onchange(type="radio", name="342")
+                        span.check
+                        span.caption  Non
+    section
+      .grid
+          .row.cells6
+              .cell.colspan4
+                  h4.ontop Completly fullfield ?  
+              .cell.colspan2
+                  label.input-control.radio
+                      input.onchange(type="radio", name="343")
+                      span.check
+                      span.caption  Oui
+                  label.input-control.radio
+                      input.onchange(type="radio", name="343")
+                      span.check
+                      span.caption  Non
+
+    section
+      .grid
+          .row.cells6
+              .cell.colspan4
+                  h4.ontop Validity date compliant ?  
+              .cell.colspan2
+                  label.input-control.radio
+                      input.onchange(type="radio", name="344")
+                      span.check
+                      span.caption  Oui
+                  label.input-control.radio
+                      input.onchange(type="radio", name="344")
+                      span.check
+                      span.caption  Non
+
+
+    section
+      .grid
+          .row.cells6
+              .cell.colspan4
+                  h4.ontop Label data match to technical data ticket? 
+              .cell.colspan2
+                  label.input-control.radio
+                      input.onchange(type="radio", name="345")
+                      span.check
+                      span.caption  Oui
+                  label.input-control.radio
+                      input.onchange(type="radio", name="345")
+                      span.check
+                      span.caption  Non
+
+    section
+        .grid
+            .row.cells12
+                .cell.colspan5
+                    h4.titop Workshop Seal number
+                .cell.colspan7
+                    .input-control.text.full-size
+                        input(type="text")
+
+            h4.ontop Remove previous label data 
+        
+                    a.popup-modal.clicktips(href='#test-modal-3') ?
+                    #test-modal-3.mfp-hide.white-popup-block
+                      h3 Description
+                      p Write seal number of previous workshop 
+
+                        .clearfix
+                        a.button.large-button.primary.popup-modal-dismiss(href='#') Close
+                  
+
+fieldset.onbottom
+  section
+    .grid
+      .row.cells3
+        .cell
+          button.button.large-button.primary.full-size Prev
+        .cell
+          
+        .cell
+          button.button.large-button.primary.full-size(disabled="disabled")  Next

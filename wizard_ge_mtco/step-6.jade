@@ -1,0 +1,62 @@
+h2 Create Report
+fieldset
+  section
+    button.button.large-button.primary.right-pull  Produce Tachograph Record Sheet and Calibration Plaque     
+    .pull-left-tip
+      a.popup-modal.clicktips(href='#test-modal-1') ?
+      #test-modal-1.mfp-hide.white-popup-block
+          h3 Description
+          p
+            | Record in the calibration report possible specific anomalies/abnormal detections For example: recutted tyres, ect.
+            .clearfix
+            a.button.large-button.primary.popup-modal-dismiss(href='#') Close
+
+      label.input-control.checkbox
+        input(type='checkbox', name='checkbox1')
+        span.check
+  
+br
+br
+fieldset
+  header
+    h3 
+      | Backup data 
+      a.popup-modal.clicktips(href='#test-modal-2') ?
+      #test-modal-2.mfp-hide.white-popup-block
+          h3 Description
+          p
+            | Archive the calibration report with the 4 (5) tachograph’s print outs.
+          p
+            .clearfix
+            a.button.large-button.primary.popup-modal-dismiss(href='#') Close
+fieldset
+  section.even
+    label.input-control.checkbox
+      input(type='checkbox', name='checkbox2')
+      span.check.place-right
+      span.caption  Attach Calibration Plaque to vehicle door pillar
+    label.input-control.checkbox
+      input(type='checkbox', name='checkbox2')
+      span.check.place-right
+      span.caption  Seal the Calibration Plaque with the sealing foil
+    label.input-control.checkbox
+      input(type='checkbox', name='checkbox2')
+      span.check.place-right
+      span.caption  If you want have Print the filled Checklist for Archive
+fieldset.onbottom
+  #test-modal.mfp-hide.white-popup-block
+      //- h1 Hint
+      p
+        | Checklist not completely filled out.
+      p
+        a.popup-modal-dismiss(href='#') Back
+  section
+    .grid
+      .row.cells3
+        .cell
+          button.button.large-button.primary.full-size Prev
+        .cell
+          button.button.large-button.primary.full-size Print
+        .cell
+          //- button.button.large-button.primary.full-size Finish
+          a.button.large-button.primary.full-size.popup-modal(href='#test-modal') Finish

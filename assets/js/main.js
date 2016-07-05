@@ -78,7 +78,7 @@ $(function() {
       $(window).load(function() {
         var radoiCount = $('.fr-wizard input[type=radio]').size() / 2;
         radoiCount = Math.floor(radoiCount);
-        if(window.location.pathname.search('wizard_fr') > 0 && window.location.pathname.search('step-6.html') > 0) {
+        if(window.location.pathname.search('wizard_fr') > 0 && window.location.pathname.search('step-6.html') > 0 || window.location.pathname.search('step-6-e1.html') > 0) {
           radoiCount = radoiCount - 1;
         }
   
@@ -90,10 +90,6 @@ $(function() {
         });
       });
 
-
-      // $('.wizzard-change').change(function() {
-      //   $('.row.cells6, ul.sidebar-nav.normal, ul.sidebar-nav.e1').toggle();
-      // });
 
 
 

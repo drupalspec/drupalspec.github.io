@@ -1,0 +1,130 @@
+h2 Security Check and creating of inspection report
+
+fieldset
+  section
+      .grid
+          .row.cells6
+              .cell.colspan4
+                  h4.ontop
+                    | Are visible manipulation hints at the tachograph system recognizable (sealing, defects, ect.)?                     
+                    a.popup-modal.clicktips(href='#test-modal-1') ?
+                    #test-modal-1.mfp-hide.white-popup-block
+                      h3 Description
+                      p Please note such hints later in the inspection report. If required exchange the TCO.<br>Open the drawer, check the mechanical.<br>Check the admission of the tachograph chart
+                        .clearfix
+                        a.button.large-button.primary.popup-modal-dismiss(href='#') Close
+
+              .cell.colspan2
+                  label.input-control.radio
+                      input(type="radio", name="reason", checked)
+                      span.check
+                      span.caption  OK
+                  label.input-control.radio
+                      input(type="radio", name="reason")
+                      span.check
+                      span.caption  Not OK
+      .grid.reason
+          .row.cells12
+              .cell.colspan5
+                  h4.titop Enter the reason
+              .cell.colspan7
+                  .input-control.text.full-size
+                      input(type="text")
+  section
+      .grid
+          .row.cells6
+              .cell.colspan4
+                  h4.ontop
+                    | Visible control MTCO 
+                    a.popup-modal.clicktips(href='#test-modal-2') ?
+                    #test-modal-2.mfp-hide.white-popup-block
+                      h3 Description
+                      p TCO housing (manufacturer sealing)<br>Electrical connector block, KITAS cable on sensor (please consider coutry specific requirements)<br>MTCO type plate, old installation plaque<br>Housing demages
+                        .clearfix
+                        a.button.large-button.primary.popup-modal-dismiss(href='#') Close
+
+              .cell.colspan2
+                  label.input-control.radio
+                      input(type="radio", name="reason2", checked)
+                      span.check
+                      span.caption  OK
+                  label.input-control.radio
+                      input(type="radio", name="reason2")
+                      span.check
+                      span.caption  Not OK
+      .grid.reason2
+          .row.cells12
+              .cell.colspan5
+                  h4.titop Enter the reason
+              .cell.colspan7
+                  .input-control.text.full-size
+                      input(type="text")
+  
+  section
+    .grid
+      .row.cells6
+        .cell.colspan4
+          h4.ontop 
+            | Visible control KITAS 
+            a.popup-modal.clicktips(href='#test-modal-3') ?
+            #test-modal-3.mfp-hide.white-popup-block
+              h3 Description
+              p KITAS at the gearbox against screw looseing<br>All sealings must be signed<br>Magnet in the KITAS environment<br>Viewable scratches on KITAS housing
+                .clearfix
+                a.button.large-button.primary.popup-modal-dismiss(href='#') Close
+
+        .cell.colspan2
+          label.input-control.radio
+            input(type='radio', name='reason3', checked='checked')
+            span.check
+            span.caption  OK
+          label.input-control.radio
+            input(type='radio', name='reason3')
+            span.check
+            span.caption  Not OK
+    .grid.reason3
+          .row.cells12
+              .cell.colspan5
+                  h4.titop Enter the reason
+              .cell.colspan7
+                  .input-control.text.full-size
+                      input(type="text")
+  section
+    .grid
+      .row.cells6
+        .cell.colspan4
+          h4.ontop 
+            | Maintainance MTCO 
+            a.popup-modal.clicktips(href='#test-modal-4') ?
+            #test-modal-4.mfp-hide.white-popup-block
+              h3 Description
+              p Basic Display, check operation buttons<br><ul><li>Date and systemtime correct?</li><li>No current Error message (additional test are only possible if the current error is fixed)</li><li>Appears the tachographs disc sign on the display with a inserted disc in the MTCO</li><li>Push the timegroup button, the timegroups must accordingly switch in the display.</li></ul><br>Check drawer<ul><li>Open the drawer, check the mechanical.</li><li>Check the admission of the tachograph chart</li></ul><br>Check the functioncontroll-LED display unit<ul><li>Check the functioncontroll LED in exchange between F1 and F2, with chart and without.</li><li>Acknowledge messages in the cluster with any key on the MTCO.</li></ul>
+                .clearfix
+                a.button.large-button.primary.popup-modal-dismiss(href='#') Close
+
+        .cell.colspan2
+          label.input-control.radio
+            input(type='radio', name='reason4', checked='checked')
+            span.check
+            span.caption  OK
+          label.input-control.radio
+            input(type='radio', name='reason4')
+            span.check
+            span.caption  Not OK
+    .grid.reason4
+          .row.cells12
+              .cell.colspan5
+                  h4.titop Enter the reason
+              .cell.colspan7
+                  .input-control.text.full-size
+                      input(type="text")
+
+fieldset.onbottom
+  section
+    .grid
+      .row.cells3
+        .cell
+          button.button.large-button.primary.full-size Prev
+        .cell
+        .cell
+          button.button.large-button.primary.full-size Next
