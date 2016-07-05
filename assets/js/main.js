@@ -90,8 +90,21 @@ $(function() {
         });
       });
 
+
+      // $('.wizzard-change').change(function() {
+      //   $('.row.cells6, ul.sidebar-nav.normal, ul.sidebar-nav.e1').toggle();
+      // });
+
+
+
 });
 
+function goToE1() {
+  window.location.href = 'wizard_fr/step-3-e1.html';
+}
 
+function goToAll() {
+  window.location.href = 'wizard_fr/step-3.html';
+}
 
 
