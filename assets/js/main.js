@@ -84,7 +84,7 @@ $(function() {
         }
         if(window.location.pathname.search('wizard_fr') > 0 && window.location.pathname.search('step-8.html') > 0 
           || window.location.pathname.search('step-8-e1.html') > 0) {
-          radoiCount = radoiCount - 2;
+          radoiCount = radoiCount - 3;
         }
   
         $('.fr-wizard input[type="radio"]').change(function() {
