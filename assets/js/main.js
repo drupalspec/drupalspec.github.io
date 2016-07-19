@@ -78,8 +78,13 @@ $(function() {
       $(window).load(function() {
         var radoiCount = $('.fr-wizard input[type=radio]').size() / 2;
         radoiCount = Math.floor(radoiCount);
-        if(window.location.pathname.search('wizard_fr') > 0 && window.location.pathname.search('step-6.html') > 0 || window.location.pathname.search('step-6-e1.html') > 0) {
+        if(window.location.pathname.search('wizard_fr') > 0 && window.location.pathname.search('step-6.html') > 0 
+          || window.location.pathname.search('step-6-e1.html') > 0) {
           radoiCount = radoiCount - 1;
+        }
+        if(window.location.pathname.search('wizard_fr') > 0 && window.location.pathname.search('step-8.html') > 0 
+          || window.location.pathname.search('step-8-e1.html') > 0) {
+          radoiCount = radoiCount - 2;
         }
   
         $('.fr-wizard input[type="radio"]').change(function() {
@@ -88,6 +93,12 @@ $(function() {
             $( "button").removeAttr("disabled");
           }
         });
+      });
+
+      $('input:radio[name="341"]').change(function() {
+        var className = this.className;
+          $('.hide-blocks > div').hide();
+          $('.hide-blocks > div.' + className).toggle();
       });
 
 
