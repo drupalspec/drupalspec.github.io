@@ -34,7 +34,7 @@ $(function() {
         $('.notify4').toggle();
     });
 
-    $('a.popup-modal, a.helper').magnificPopup({
+    $('.popup-modal, .helper').magnificPopup({
         type: 'inline',
         preloader: false,
         focus: '#username',
