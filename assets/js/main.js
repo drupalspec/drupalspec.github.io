@@ -1,8 +1,8 @@
 $(function() {
+
     $('ul.sidebar-nav ul li.active').parent().parent().addClass('active');
     $('ul.sidebar-nav li.active > ul').addClass('expanded');
     $('ul.sidebar-nav li.active > ul').parent().addClass('expanded');
-
 
     $('input:radio[name="reason"]').change(function() {
         $('.reason').toggle();
@@ -25,93 +25,42 @@ $(function() {
         $('.notify').toggle();
     });
 
-    $('input:radio[name="notify4"]').change(function() {
-        $('.notify4').toggle();
-    });
-
     $('input:radio[name="notify3"]').change(function() {
         $('.notify3').toggle();
         $('.notify2').toggle();
     });
 
-    
-  
-      if(window.location.pathname.search('wizard_fr') > 0 || 
-        window.location.pathname.search('wizard_ge_mtco') > 0 || 
-        window.location.pathname.search('wizard_ge') > 0
-        ) { // For FR Wizard only
-        //Modal
-        $('.popup-modal').magnificPopup({
-          type: 'inline',
-          preloader: false,
-          focus: '#username',
-          modal: true
-        });
-        $(document).on('click', '.popup-modal-dismiss', function (e) {
-          e.preventDefault();
-          $.magnificPopup.close();
-        });
-      }
+    $('input:radio[name="notify4"]').change(function() {
+        $('.notify4').toggle();
+    });
 
+    $('a.popup-modal, a.helper').magnificPopup({
+        type: 'inline',
+        preloader: false,
+        focus: '#username',
+        modal: true
+    });
 
-
-      $( ".open-text" ).click(function() {
-        $(this).parent().parent().find('.text-box').slideToggle('fast');
-        $(this).toggleClass('open');
-      });
-
-      $( "input[name='radioUkMtco']" ).change(function() {
-        $('.wizard-navigation.show, .wizard-navigation.hide').toggle();
-      });
-  
-      //  For no active sidebar menu item
-      var parents = $('.fr-wizard ul.sidebar-nav li.active ').parent().children();
-      for(i = 0; i < parents.length; i++) {
-        var hasClass = parents[i].className;
-
-        if(parents[i].className) {break;}
-          parents[i].className = 'disable'; 
-        }
-
-
-      // For french wizzard
-      $(window).load(function() {
-        var radoiCount = $('.fr-wizard input[type=radio]').size() / 2;
-        radoiCount = Math.floor(radoiCount);
-        if(window.location.pathname.search('wizard_fr') > 0 && window.location.pathname.search('step-6.html') > 0 
-          || window.location.pathname.search('step-6-e1.html') > 0) {
-          radoiCount = radoiCount - 1;
-        }
-        if(window.location.pathname.search('wizard_fr') > 0 && window.location.pathname.search('step-8.html') > 0 
-          || window.location.pathname.search('step-8-e1.html') > 0) {
-          radoiCount = radoiCount - 3;
-        }
-  
-        $('.fr-wizard input[type="radio"]').change(function() {
-          var size = $('.fr-wizard input[type=radio]:checked').size();
-          if(size == radoiCount) {
-            $( "button").removeAttr("disabled");
+    $('.popup--image-fullscreen').click(function(e){
+        e.preventDefault();
+        var src = $(this).attr('src');
+        $.magnificPopup.open({
+          items: {
+            src: '<div class="wtb-popup--image-fullscreen"><img src="'+src+'" /></div>',
+            type: 'inline'
           }
-        });
-      });
+        })
+    });
 
-      $('input:radio[name="341"]').change(function() {
-        var className = this.className;
-          $('.hide-blocks > div').hide();
-          $('.hide-blocks > div.' + className).toggle();
-      });
+    $(document).on('click', '.popup-modal-dismiss', function (e) {
+        e.preventDefault();
+        $.magnificPopup.close();
+    });
 
-
-
+    $( "input[name='radioUkMtco']" ).change(function() {
+      $('.wizard-navigation.show, .wizard-navigation.hide').toggle();
+    });
 
 });
-
-function goToE1() {
-  window.location.href = 'wizard_fr/step-3-e1.html';
-}
-
-function goToAll() {
-  window.location.href = 'wizard_fr/step-3.html';
-}
 
 
