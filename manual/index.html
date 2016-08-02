@@ -1,0 +1,70 @@
+<!DOCTYPE html><!--if IE 8<html class="lt-ie9">--><!-- [if gt IE 8] <!--><html lang="en"><!-- <![endif]--><head><title>Layout / Workshop Tab</title><base href="/"/><meta charset="UTF-8"/><link rel="apple-touch-icon" sizes="57x57" href="/assets/favicons/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/assets/favicons/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/assets/favicons/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/assets/favicons/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/assets/favicons/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/assets/favicons/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/assets/favicons/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/assets/favicons/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" href="/assets/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/assets/favicons/android-chrome-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="/assets/favicons/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/assets/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="/assets/favicons/manifest.json">
+<link rel="mask-icon" href="/assets/favicons/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="/assets/favicons/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-TileImage" content="/assets/favicons/mstile-144x144.png">
+<meta name="msapplication-config" content="/assets/favicons/browserconfig.xml">
+<meta name="theme-color" content="#ffffff"><!-- Google Fonts --><link rel="stylesheet" href="assets/css/magnific-popup.css"/><link rel="stylesheet" href="assets/css/metro.css"/><link rel="stylesheet" href="assets/css/wtb-form.css"/><link rel="stylesheet" href="assets/css/style.css"/><script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script><script src="assets/js/jquery.magnific-popup.min.js"></script><script src="assets/js/main.js"></script></head><body><div class="app fr-wizard"><div class="app-header"><span>UI Manual</span></div><div class="app-content"><div class="app-content--cell"><div class="app-sidebar"><div class="cell-wrapper"><div class="wizard-navigation"><h1>UI Manual</h1><ul class="sidebar-nav"><li class="active"><a href="/manual/index.html">Layout</a></li><li><a href="/manual/layout.html">UI Library</a></li></ul></div></div></div><div class="app-panel"><div class="cell-wrapper"><div class="wtb-form"><div class="wtb-form--row__title"><div class="label">Лэйаут</div></div><div class="wtb-form--row wtb-form--row__toc"></div><div class="wtb-form--row__subtitle"><div class="label">Правила работы</div></div><div class="wtb-form--row"><p>SceneBuilder используется только как просмотрщик. Все изменения в код должны вводиться руками.</p>
+<p>Надо максимально избегать стилей в тексте: <code>maxWidth</code>, <code>prefHeight</code>, <code>minWidth</code>, <code>minHeight</code>, <code>&lt;Insets&gt;</code> и прочая ерунда запрещены.</p>
+<p>При переверстке текущих шаблонов надо особенно аккуратными быть с параметрами <code>text</code>, <code>fx:define</code>, <code>fx:id</code> и <code>id</code>. Не копируйте бездумно из примеров, а обязательно заменяйте на текущие значения.</p>
+<p>Внутренний CSS для JavaFX — <a href="/manual/modena.css">modena.css</a>, <a href="/manual/caspian.css">caspian.css</a></p>
+</div><div class="wtb-form--row__subtitle"><div class="label">Основной файл визарда</div></div><div class="wtb-form--row__code"><p><div class="label">FXML</div></p>
+<pre><code>    &lt;SplitPane id=&quot;splitPane&quot; dividerPositions=&quot;0.24&quot;
+           stylesheets=&quot;@../../../common/css/metro-ui.css&quot;
+           styleClass=&quot;wtb-scene&quot;
+           xmlns=&quot;http://javafx.com/javafx/8&quot; xmlns:fx=&quot;http://javafx.com/fxml/1&quot;&gt;
+        &lt;items&gt;
+          &lt;VBox styleClass=&quot;wtb-sidebar&quot;&gt;
+             &lt;Label styleClass=&quot;wtb-sidebar--header&quot; fx:id=&quot;mainTitle&quot;/&gt;
+             &lt;VBox fx:id=&quot;navigationPane&quot; styleClass=&quot;wtb-sidebar--menu&quot; /&gt;
+          &lt;/VBox&gt;
+          &lt;AnchorPane styleClass=&quot;wtb-content&quot; fx:id=&quot;contentAnchorPane&quot;&gt;
+                &lt;ScrollPane styleClass=&quot;wtb-frame&quot; AnchorPane.leftAnchor=&quot;0.0&quot;&gt;
+                    &lt;Pane styleClass=&quot;wtb-iframe&quot; fx:id=&quot;wizardStepsPane&quot;/&gt;
+                &lt;/ScrollPane&gt;
+          &lt;/AnchorPane&gt;
+        &lt;/items&gt;
+    &lt;/SplitPane&gt;
+</code></pre></div><div class="wtb-form--row"><p>Мы используем <code>SplitPane.wtb-scene</code> с подключенным файлом стилей <code>metro-ui.css</code>.</p>
+<p>Сайдбар слева реализуется через <code>VBox.wtb-sidebar</code>. В нем находятся <code>Label.wtb-sidebar--header</code> и <code>VBox.wtb-sidebar--menu</code></p>
+</div><div class="wtb-form--row__subtitle"><div class="label">Меню</div></div><div class="wtb-form--row"><p>Меню генерируется автоматически, а для оформления использует классы <code>.wtb-sidebar--link</code> и <code>.wtb-sidebar--sublink</code>.</p>
+</div><div class="wtb-form--row__subtitle"><div class="label">Файлы форм визарда</div></div><div class="wtb-form--row"><p>Используйте VBox, как форму, и HBox, Grid и прочие Pane, как строки формы.</p>
+<p>Для VBox указывайте класс <code>.wtb-form</code>, который дает отступы справа и слева. Ширину и высоту формы указывать не нужно.</p>
+</div><div class="wtb-form--row__code"><p><div class="label">FXML</div></p>
+<pre><code>    &lt;VBox id=&quot;MainPane&quot; fx:id=&quot;mainAnchorPane&quot; styleClass=&quot;wtb-form&quot;
+      stylesheets=&quot;@../../../common/css/metro-ui.css&quot;
+      xmlns=&quot;http://javafx.com/javafx/8&quot; xmlns:fx=&quot;http://javafx.com/fxml/1&quot;&gt;
+          &lt;children&gt;
+          &lt;/children&gt;
+    &lt;/VBox&gt;
+</code></pre></div><div class="wtb-form--row__subtitle"><div class="label">Секция формы</div></div><div class="wtb-form--row"><p>Секции формы формируются из <code>HBox</code>, <code>Grid</code> и прочих <code>Pane</code> с классами из коллекции <code>.wtb-form--row__</code>. Все секции имеют заранее заданные вертикальные отступы между друг другом.</p>
+</div><div class="wtb-form--row__code"><p><div class="label">FXML</div></p>
+<pre><code>    &lt;HBox styleClass=&quot;wtb-form--row__modificator&quot;&gt;
+        &lt;children&gt;
+        &lt;/children&gt;
+    &lt;/HBox&gt;
+</code></pre></div><div class="wtb-form--row"><p>Ширина внутреннего пространства секции (т.е. с вычетом отступов) равна 880px.</p>
+<p>Если после лейбла необходим знак вопроса с подсказкой, используйте компонент подсказки. У него уже есть отступ слева от предыдущего элемента.</p>
+</div><div class="wtb-form--row__code"><p><div class="label">FXML</div></p>
+<pre><code>    &lt;Pane fx:id=&quot;helper&quot; /&gt;
+</code></pre></div><div class="wtb-form--row"><p>После кажого лейбла со знаком вопроса или без надо размещать спейсер.</p>
+</div><div class="wtb-form--row__code"><p><div class="label">FXML</div></p>
+<pre><code>    &lt;Pane HBox.hgrow=&quot;ALWAYS&quot;/&gt;
+</code></pre></div><div class="wtb-form--row__subtitle"><div class="label">Радиобаттоны и чекбоксы</div></div><div class="wtb-form--row__code"><p><div class="label">FXML</div></p>
+<pre><code>    &lt;RadioButton fx:id=&quot;radiobutton&quot; text=&quot;OK&quot; toggleGroup=&quot;$tgManipulation&quot; mnemonicParsing=&quot;false&quot; /&gt;
+
+    &lt;CheckBox fx:id=&quot;checkbox&quot; mnemonicParsing=&quot;false&quot; /&gt;
+</code></pre></div></div></div></div></div></div><div class="app-footer">&nbsp;</div></div><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/styles/github.min.css"><script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/highlight.min.js"></script><script src="./manual/wizard.js"></script></body></html>
