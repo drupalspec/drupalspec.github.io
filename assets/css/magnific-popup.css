@@ -1,14 +1,32 @@
 /* Magnific Popup CSS */
 .mfp-bg {
   top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  left: 50%;
+  width: 1280px;
+  height: 800px;
+  margin-left: -640px;
   z-index: 1042;
   overflow: hidden;
   position: fixed;
   background: #0b0b0b;
-  opacity: 0.8; }
+  opacity: 0.8;
+}
+
+@media screen and (max-height:850px) {
+  .mfp-bg { top: 0; }
+}
+
+@media screen and (min-height:850px){
+  .mfp-bg { top: 50px; }
+}
+
+@media screen and (min-height:950px){
+  .mfp-bg { top: 90px; }
+}
+
+@media screen and (min-height:1050px) {
+  .mfp-bg { top: 190px; }
+}
 
 .mfp-wrap {
   top: 0;

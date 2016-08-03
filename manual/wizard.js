@@ -12,7 +12,7 @@ $(function() {
 
     var newLine, el, title, link, linkId = 0;
 
-    $(".wtb-form .wtb-form--row__subtitle").each(function() {
+    $(".wt-form .wt-row__subtitle").each(function() {
         linkId++;
         el = $(this);
         title = el.children('.label').text();

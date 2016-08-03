@@ -46,7 +46,7 @@ $(function() {
         var src = $(this).attr('src');
         $.magnificPopup.open({
           items: {
-            src: '<div class="wtb-popup--image-fullscreen"><img src="'+src+'" /></div>',
+            src: '<div class="wt-popup__image-fullscreen"><img src="'+src+'" /></div>',
             type: 'inline'
           }
         })
