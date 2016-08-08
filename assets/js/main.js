@@ -128,6 +128,10 @@ $(function() {
         return formatted;
     }
 
+    if ($('.wt-form .wt-row__code').length) {
+        $("#showFxml, #downloadFxml").show();
+    }
+
     $("#showFxml").click(function(e){
         e.preventDefault();
         var isFxml = $('body').hasClass('show-fxml');
