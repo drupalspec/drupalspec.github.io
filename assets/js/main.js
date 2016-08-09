@@ -142,7 +142,7 @@ $(function() {
         e.preventDefault();
         var fileContent = [];
         // push headear in variable
-        var header = $('#fxidheader').text();
+        var header = $('#fxml-header').text();
         fileContent.push(header);
 
 
@@ -152,7 +152,7 @@ $(function() {
         });
 
         // push footer in variable
-        var footer = $('#fxidfooter').text();
+        var footer = $('#fxml-footer').text();
         fileContent.push(footer);
 
         // get name of file from adress bar, like «step1», «step2» or others

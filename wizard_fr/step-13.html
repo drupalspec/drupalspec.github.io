@@ -27,36 +27,41 @@
             &lt;Label text=&quot;Start the 1000 m distance test&quot;/&gt;
         &lt;/children&gt;
     &lt;/HBox&gt;
-</code></pre></div><div id="gotoDistanceTest" class="wt-row__full-button"><button>Start 1000 m distance test</button></div><div class="wt-row__code"><pre><code>    &lt;HBox styleClass=&quot;wt-row__button&quot; fx:id=&quot;gotoDistanceTest&quot;&gt;
+</code></pre></div><div id="gotoDistanceTest" class="wt-row__button"><button>Start 1000 m distance test</button></div><div class="wt-row__code"><pre><code>    &lt;HBox styleClass=&quot;wt-row__button&quot; fx:id=&quot;gotoDistanceTest&quot;&gt;
         &lt;children&gt;
             &lt;Button onAction=&quot;#navigateTo&quot; text=&quot;Start 1000 m distance test&quot; mnemonicParsing=&quot;false&quot;/&gt;
         &lt;/children&gt;
     &lt;/HBox&gt;
-</code></pre></div><div id="gotoPinForm" class="wt-row__button_md"><div class="label">Insert Card in reader 2</div><button>Send PIN</button></div><div class="wt-row__code"><pre><code>    NO CODE HERE
+</code></pre></div><div id="gotoPinForm" class="wt-row__input_md"><div class="label">Insert Card in reader 2</div><button>Send PIN</button></div><div class="wt-row__code"><pre><code>    &lt;HBox styleClass=&quot;wt-row__input_md&quot; fx:id=&quot;gotoPinForm&quot;&gt;
+        &lt;children&gt;
+            &lt;Label text=&quot;Insert Card in reader 2&quot;/&gt;
+            &lt;Pane HBox.hgrow=&quot;ALWAYS&quot;/&gt;
+            &lt;Button onAction=&quot;#onClickAction&quot; text=&quot;Send PIN&quot;/&gt;
+        &lt;/children&gt;
+    &lt;/HBox&gt;
 </code></pre></div><div class="wt-row__subtitle"><div class="label">Print the 6 tickets required by regulation</div></div><div class="wt-row__code"><pre><code>    &lt;VBox styleClass=&quot;wt-row__subtitle&quot;&gt;
-         &lt;children&gt;
+        &lt;children&gt;
             &lt;Label text=&quot;Print the 6 tickets required by regulation&quot;/&gt;
             &lt;Separator /&gt;
-         &lt;/children&gt;
+        &lt;/children&gt;
     &lt;/VBox&gt;
-</code></pre></div><div class="wt-row__radiobuttons_yes"><div class="label">Datas on the 6 tickets are compliant ?</div><div class="radiobuttons"><div class="radio"><input type="radio" name="341"><span class="check"></span><span class="caption">Oui</span></div><div class="radio"><input type="radio" name="341"><span class="check"></span><span class="caption">Non</span></div></div></div><div class="wt-row__code"><pre><code>    &lt;HBox styleClass=&quot;wt-row__helper-radiobuttons_yes&quot;&gt;
+</code></pre></div><div class="wt-row__radiobuttons_yes"><div class="label">Datas on the 6 tickets are compliant ?</div><div class="radiobuttons"><div class="radio"><input type="radio" name="341"><span class="check"></span><span class="caption">Oui</span></div><div class="radio"><input type="radio" name="341"><span class="check"></span><span class="caption">Non</span></div></div></div><div class="wt-row__code"><pre><code>    &lt;HBox styleClass=&quot;wt-row__radiobuttons_yes&quot;&gt;
         &lt;children&gt;
             &lt;Label text=&quot;Datas on the 6 tickets are compliant ?&quot;/&gt;
-            &lt;Pane fx:id=&quot;Helper&quot; /&gt;
             &lt;Pane HBox.hgrow=&quot;ALWAYS&quot;/&gt;
             &lt;RadioButton text=&quot;Oui&quot; mnemonicParsing=&quot;false&quot;/&gt;
             &lt;RadioButton text=&quot;Non&quot; mnemonicParsing=&quot;false&quot;/&gt;
         &lt;/children&gt;
     &lt;/HBox&gt;
-</code></pre></div></div><div class="wt-form--footer"><button class="prev">Prev</button><button disabled="disabled" class="next">Next</button></div></div></div></div></div><div class="app-footer"><button id="showFxml" title="Show/Hide FXML Code"><span class="show">&lt;&thinsp;+fxml/&gt;</span><span class="hide">&lt;&thinsp;—fxml/&gt;</span></button><button id="downloadFxml" title="Download FXML File">[&thinsp;&#8595;&thinsp;]</button></div><div id="fxidheader" style="display:none"><div class="wt-row__code"><pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+</code></pre></div></div><div class="wt-form--footer"><button class="prev">Prev</button><button disabled="disabled" class="next">Next</button></div></div></div></div></div><div class="app-footer"><button id="showFxml" title="Show/Hide FXML Code"><span class="show">&lt;&thinsp;+fxml/&gt;</span><span class="hide">&lt;&thinsp;—fxml/&gt;</span></button><button id="downloadFxml" title="Download FXML File">[&thinsp;&#8595;&thinsp;]</button></div><div id="fxml-header" style="display:none"><div class="wt-row__code"><pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 
 &lt;?import javafx.scene.control.*?&gt;
 &lt;?import javafx.scene.layout.*?&gt;
 
 &lt;VBox id=&quot;MainPane&quot; fx:id=&quot;DEVICE_TESTING&quot; styleClass=&quot;wt-form&quot;
-      stylesheets=&quot;@../../common/css/metro-ui.css&quot;
+      stylesheets=&quot;@../../../common/css/metro-ui.css&quot;
       xmlns=&quot;http://javafx.com/javafx/8&quot; xmlns:fx=&quot;http://javafx.com/fxml/1&quot;&gt;
     &lt;children&gt;
-</code></pre></div></div><div id="fxidfooter" style="display:none"><div class="wt-row__code"><pre><code>    &lt;/children&gt;
+</code></pre></div></div><div id="fxml-footer" style="display:none"><div class="wt-row__code"><pre><code>    &lt;/children&gt;
 &lt;/VBox&gt;
 </code></pre></div></div></div><script src="./wizard_fr/wizard.js"></script></body></html>
