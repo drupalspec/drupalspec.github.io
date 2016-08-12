@@ -1,4 +1,4 @@
-<!DOCTYPE html><!--if IE 8<html class="lt-ie9">--><!-- [if gt IE 8] <!--><html lang="en"><!-- <![endif]--><head><title>Check KITAS / Workshop Tab</title><base href="/"/><meta charset="UTF-8"/><link rel="apple-touch-icon" sizes="57x57" href="/assets/favicons/apple-touch-icon-57x57.png">
+<!DOCTYPE html><!--if IE 8<html class="lt-ie9">--><!-- [if gt IE 8] <!--><html lang="en"><!-- <![endif]--><head><title>Calibration Wizard / Workshop Tab</title><base href="/"/><meta charset="UTF-8"/><link rel="apple-touch-icon" sizes="57x57" href="/assets/favicons/apple-touch-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="/assets/favicons/apple-touch-icon-60x60.png">
 <link rel="apple-touch-icon" sizes="72x72" href="/assets/favicons/apple-touch-icon-72x72.png">
 <link rel="apple-touch-icon" sizes="76x76" href="/assets/favicons/apple-touch-icon-76x76.png">
@@ -17,7 +17,51 @@
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="msapplication-TileImage" content="/assets/favicons/mstile-144x144.png">
 <meta name="msapplication-config" content="/assets/favicons/browserconfig.xml">
-<meta name="theme-color" content="#ffffff"><!-- Google Fonts --><link rel="stylesheet" href="assets/css/magnific-popup.css"/><link rel="stylesheet" href="assets/css/metro.css"/><link rel="stylesheet" href="assets/css/wt-form.css"/><link rel="stylesheet" href="assets/css/style.css"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/styles/github.min.css"/><script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script><script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/highlight.min.js"></script><script src="assets/js/jquery.magnific-popup.min.js"></script><script src="assets/js/main.js"></script></head><body><div class="app"><div class="app-header"><span>Calibration Wizard</span></div><div class="app-content"><div class="app-content--cell"><div class="app-sidebar"><div class="cell-wrapper"><div class="wizard-navigation"><h1>Wizard UK</h1><ul class="sidebar-nav"><li><a href="/wizard_uk/index.html">Measurement type</a></li><li><a href="/wizard_uk/step-1.html">Common Requirements</a></li><li><a href="/wizard_uk/step-2.html">Device Approval and Functionality Checks</a><ul><li><a href="/wizard_uk/step-2_1.html">Continued</a></li></ul></li><li><a href="/wizard_uk/step-3.html">Events, Faults and Manipulation Check</a></li><li><a href="/wizard_uk/step-4.html">Perform System Integrity Check and Visual Inspection of KITAS Sensor</a><ul><li class="active"><a href="/wizard_uk/step-4_1.html">Continued</a></li></ul></li><li><a href="/wizard_uk/step-5.html">DTCO Parameterisation, Adaption and Tolerance Check</a><ul><li><a href="/wizard_uk/step-5_1.html">Continued</a></li></ul></li><li><a href="/wizard_uk/step-6.html">Produce Tachograph Record Sheet and Calibration Plaque</a></li><li><a href="/wizard_uk/step-7.html">Sealing</a></li></ul></div></div></div><div class="app-panel"><div class="cell-wrapper"><h2>Perform System Integrity Check and Visual Inspection of KITAS Sensor</h2><fieldset><header><h3>Perform System Integrity Check (If applicable)</h3></header><section><div class="grid"><div class="row cells6"><div class="cell colspan4"><h4>KITAS Direct Cable</h4><small>(Connect cable to sensor)</small></div><div class="cell colspan2"><label class="input-control radio"><input type="radio" name="radio2" checked="checked"><span class="check"></span><span class="caption">Yes</span></label><label class="input-control radio"><input type="radio" name="radio2"><span class="check"></span><span class="caption">No</span></label></div></div></div></section><section><button class="button large-button primary full-size">Read Sensor Serial No</button></section><section><div class="grid"><div class="row cells6"><div class="cell colspan4"><h4>Check serial nos match with Tech Printout</h4></div><div class="cell colspan2"><label class="input-control radio"><input type="radio" name="radio22" checked="checked"><span class="check"></span><span class="caption">Yes</span></label><label class="input-control radio"><input type="radio" name="radio22"><span class="check"></span><span class="caption">No</span></label></div></div></div></section><section><button class="button large-button primary full-size">Pair VU and Sensor</button></section><section><label class="input-control checkbox"><input type="checkbox" name="checkbox2"><span class="check place-right"></span><h4 class="ontop">Mark on Reverse of 1st Technical data printout "Sensor Serial no, checked using VDO WorkshopTab"</h4></label></section></fieldset><fieldset class="onbottom"><section><div class="grid"><div class="row cells3"><div class="cell"><button class="button large-button primary full-size">Prev</button></div><div class="cell"></div><div class="cell"><button class="button large-button primary full-size">Next</button></div></div></div></section></fieldset></div></div></div></div><div class="app-footer"><button id="showFxml" title="Show/Hide FXML Code"><span class="show">&lt;&thinsp;+fxml/&gt;</span><span class="hide">&lt;&thinsp;—fxml/&gt;</span></button><button id="downloadFxml" title="Download FXML File">[&thinsp;&#8595;&thinsp;]</button></div><div id="fxml-header" style="display:none"><div class="wt-row__code"><pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+<meta name="theme-color" content="#ffffff"><!-- Google Fonts --><link rel="stylesheet" href="assets/css/magnific-popup.css"/><link rel="stylesheet" href="assets/css/metro.css"/><link rel="stylesheet" href="assets/css/wt-form.css"/><link rel="stylesheet" href="assets/css/style.css"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/styles/github.min.css"/><script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script><script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/highlight.min.js"></script><script src="assets/js/jquery.magnific-popup.min.js"></script><script src="assets/js/main.js"></script></head><body><div class="app fr-wizard"><div class="app-header"><span>Calibration Wizard</span></div><div class="app-content"><div class="app-content--cell"><div class="app-sidebar"><div class="cell-wrapper"><div class="wizard-navigation"><h1>Wizard UK</h1><ul class="sidebar-nav"><li><a href="/wizard_uk/index.html">Measurement type</a></li><li><a href="/wizard_uk/step-1.html">Common Requirements</a></li><li><a href="/wizard_uk/step-2.html">Device Approval and Functionality Checks</a><ul><li><a href="/wizard_uk/step-2_1.html">Continued</a></li></ul></li><li><a href="/wizard_uk/step-3.html">Events, Faults and Manipulation Check</a></li><li><a href="/wizard_uk/step-4.html">Perform System Integrity Check and Visual Inspection of KITAS Sensor</a><ul><li class="active"><a href="/wizard_uk/step-4_1.html">Continued</a></li></ul></li><li><a href="/wizard_uk/step-5.html">DTCO Parameterisation, Adaption and Tolerance Check</a><ul><li><a href="/wizard_uk/step-5_1.html">Continued</a></li></ul></li><li><a href="/wizard_uk/step-6.html">Produce Tachograph Record Sheet and Calibration Plaque</a></li><li><a href="/wizard_uk/step-7.html">Sealing</a></li></ul></div></div></div><div class="app-panel"><div class="cell-wrapper"><div class="wt-form"><div class="wt-row__title"><div class="label">Perform System Integrity Check and Visual Inspection of KITAS Sensor</div></div><div class="wt-row__code"><pre><code>    &lt;HBox styleClass=&quot;wt-row__title&quot;&gt;
+         &lt;children&gt;
+            &lt;Label text=&quot;Perform System Integrity Check and Visual Inspection of KITAS Sensor&quot;/&gt;
+         &lt;/children&gt;
+    &lt;/HBox&gt;
+</code></pre></div><div class="wt-row__subtitle"><div class="label">Perform System Integrity Check (If applicable)</div></div><div class="wt-row__code"><pre><code>    &lt;VBox styleClass=&quot;wt-row__subtitle&quot;&gt;
+        &lt;children&gt;
+            &lt;Label text=&quot;Perform System Integrity Check (If applicable)&quot;/&gt;
+            &lt;Separator /&gt;
+        &lt;/children&gt;
+    &lt;/VBox&gt;
+</code></pre></div><div id="radio0" class="wt-row__radiobuttons_yes"><div class="label">KITAS Direct Cable (Connect cable to sensor)</div><div class="radiobuttons"><div class="radio"><input type="radio" name="341"><span class="check"></span><span class="caption">Yes</span></div><div class="radio"><input type="radio" name="341"><span class="check"></span><span class="caption">No</span></div></div></div><div class="wt-row__code"><pre><code>    &lt;HBox styleClass=&quot;wt-row__radiobuttons_yes&quot; fx:id=&quot;radio0&quot;&gt;
+        &lt;children&gt;
+            &lt;Label text=&quot;KITAS Direct Cable (Connect cable to sensor)&quot;/&gt;
+            &lt;Pane HBox.hgrow=&quot;ALWAYS&quot;/&gt;
+            &lt;RadioButton text=&quot;Yes&quot; mnemonicParsing=&quot;false&quot;/&gt;
+            &lt;RadioButton text=&quot;No&quot; mnemonicParsing=&quot;false&quot;/&gt;
+        &lt;/children&gt;
+    &lt;/HBox&gt;
+</code></pre></div><div class="wt-row__button"><button>Read Sensor Serial No</button></div><div class="wt-row__code"><pre><code>    &lt;HBox styleClass=&quot;wt-row__button&quot;&gt;
+        &lt;children&gt;
+            &lt;Button onAction=&quot;#navigateTo&quot; text=&quot;Read Sensor Serial No&quot; mnemonicParsing=&quot;false&quot;/&gt;
+        &lt;/children&gt;
+    &lt;/HBox&gt;
+</code></pre></div><div id="radio1" class="wt-row__radiobuttons_yes"><div class="label">Check serial nos match with Tech Printout</div><div class="radiobuttons"><div class="radio"><input type="radio" name="342"><span class="check"></span><span class="caption">Yes</span></div><div class="radio"><input type="radio" name="342"><span class="check"></span><span class="caption">No</span></div></div></div><div class="wt-row__code"><pre><code>    &lt;HBox styleClass=&quot;wt-row__radiobuttons_yes&quot; fx:id=&quot;radio1&quot;&gt;
+        &lt;children&gt;
+            &lt;Label text=&quot;Check serial nos match with Tech Printout&quot;/&gt;
+            &lt;Pane HBox.hgrow=&quot;ALWAYS&quot;/&gt;
+            &lt;RadioButton text=&quot;Yes&quot; mnemonicParsing=&quot;false&quot;/&gt;
+            &lt;RadioButton text=&quot;No&quot; mnemonicParsing=&quot;false&quot;/&gt;
+        &lt;/children&gt;
+    &lt;/HBox&gt;
+</code></pre></div><div class="wt-row__button"><button>Pair VU and Sensor</button></div><div class="wt-row__code"><pre><code>    &lt;HBox styleClass=&quot;wt-row__button&quot;&gt;
+        &lt;children&gt;
+            &lt;Button onAction=&quot;#navigateTo&quot; text=&quot;Pair VU and Sensor&quot; mnemonicParsing=&quot;false&quot;/&gt;
+        &lt;/children&gt;
+    &lt;/HBox&gt;
+</code></pre></div><div class="wt-row__checkbox"><div class="label">Mark on Reverse of 1st Technical data printout 'Sensor Serial no, checked using VDO WorkshopTab'</div><div class="checkbox"><input type="checkbox" name="checkbox1"><span class="check"></span></div></div><div class="wt-row__code"><pre><code>    &lt;HBox styleClass=&quot;wt-row__checkbox&quot;&gt;
+        &lt;children&gt;
+            &lt;Label text=&quot;Mark on Reverse of 1st Technical data printout 'Sensor Serial no, checked using VDO WorkshopTab'&quot;/&gt;
+            &lt;Pane HBox.hgrow=&quot;ALWAYS&quot;/&gt;
+            &lt;CheckBox fx:id=&quot;checkbox&quot; mnemonicParsing=&quot;false&quot;/&gt;
+        &lt;/children&gt;
+    &lt;/HBox&gt;
+</code></pre></div></div><div class="wt-form--footer"><button class="prev">Prev</button><button class="next">Next</button></div></div></div></div></div><div class="app-footer"><button id="showFxml" title="Show/Hide FXML Code"><span class="show">&lt;&thinsp;+fxml/&gt;</span><span class="hide">&lt;&thinsp;—fxml/&gt;</span></button><button id="downloadFxml" title="Download FXML File">[&thinsp;&#8595;&thinsp;]</button></div><div id="fxml-header" style="display:none"><div class="wt-row__code"><pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 
 &lt;?import javafx.scene.control.*?&gt;
 &lt;?import javafx.scene.layout.*?&gt;
@@ -28,4 +72,4 @@
     &lt;children&gt;
 </code></pre></div></div><div id="fxml-footer" style="display:none"><div class="wt-row__code"><pre><code>    &lt;/children&gt;
 &lt;/VBox&gt;
-</code></pre></div></div></div></body></html>
+</code></pre></div></div></div><script src="./wizard_uk/wizard.js"></script></body></html>

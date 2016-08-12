@@ -17,7 +17,42 @@
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="msapplication-TileImage" content="/assets/favicons/mstile-144x144.png">
 <meta name="msapplication-config" content="/assets/favicons/browserconfig.xml">
-<meta name="theme-color" content="#ffffff"><!-- Google Fonts --><link rel="stylesheet" href="assets/css/magnific-popup.css"/><link rel="stylesheet" href="assets/css/metro.css"/><link rel="stylesheet" href="assets/css/wt-form.css"/><link rel="stylesheet" href="assets/css/style.css"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/styles/github.min.css"/><script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script><script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/highlight.min.js"></script><script src="assets/js/jquery.magnific-popup.min.js"></script><script src="assets/js/main.js"></script></head><body><div class="app"><div class="app-header"><span>Error Checks</span></div><div class="app-content"><div class="app-content--cell"><div class="app-sidebar"><div class="cell-wrapper"><div class="wizard-navigation"><h1>Wizard Spain</h1><ul class="sidebar-nav"><li><a href="/wizard_sp_tco/step-1.html">Printout & Visual Inspection</a><ul><li><a href="/wizard_sp_tco/step-1.html">Collect vehicle datas</a></li><li><a href="/wizard_sp_tco/step-1_1.html">Collect TCO datas</a></li><li><a href="/wizard_sp_tco/step-1_2.html">Installation template</a></li><li><a href="/wizard_sp_tco/step-1_3.html">Seales</a></li></ul></li><li><a href="/wizard_sp_tco/step-2.html">Seals and Tyres</a><ul><li><a href="/wizard_sp_tco/step-2.html">Visual seal inspection</a></li><li><a href="/wizard_sp_tco/step-2_1.html">Visual tyre inspection</a></li></ul></li><li><a href="/wizard_sp_tco/step-4.html">Check KITAS</a></li><li><a href="/wizard_sp_tco/step-5.html">Device Testing</a></li><li><a href="/wizard_sp_tco/step-6.html">Parametrization</a></li><li class="active"><a href="/wizard_sp_tco/step-7.html">Error Checks</a></li><li><a href="/wizard_sp_tco/step-8.html">Last Steps</a></li></ul></div></div></div><div class="app-panel"><div class="cell-wrapper"><h2>Error Checks</h2><fieldset><header><h3>Distance test</h3></header><section><button class="button large-button primary full-size">Calibration > Check TCO > Check distance</button></section><section><label class="input-control checkbox"><input type="checkbox" name="checkbox2"><span class="check place-right"></span><span class="caption">Distance Checked</span></label></section><section><button class="button large-button primary full-size">Calibration > Trial run</button></section><section><div class="grid"><div class="row cells12"><div class="cell colspan5"><h4 class="titop">New odometer value</h4></div><div class="cell colspan7"><div class="input-control text full-size"><input type="text"></div></div></div></div></section></fieldset><fieldset class="onbottom"><section><div class="grid"><div class="row cells3"><div class="cell"><button class="button large-button primary full-size">Prev</button></div><div class="cell"></div><div class="cell"><button class="button large-button primary full-size">Next</button></div></div></div></section></fieldset></div></div></div></div><div class="app-footer"><button id="showFxml" title="Show/Hide FXML Code"><span class="show">&lt;&thinsp;+fxml/&gt;</span><span class="hide">&lt;&thinsp;—fxml/&gt;</span></button><button id="downloadFxml" title="Download FXML File">[&thinsp;&#8595;&thinsp;]</button></div><div id="fxml-header" style="display:none"><div class="wt-row__code"><pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+<meta name="theme-color" content="#ffffff"><!-- Google Fonts --><link rel="stylesheet" href="assets/css/magnific-popup.css"/><link rel="stylesheet" href="assets/css/metro.css"/><link rel="stylesheet" href="assets/css/wt-form.css"/><link rel="stylesheet" href="assets/css/style.css"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/styles/github.min.css"/><script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script><script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/highlight.min.js"></script><script src="assets/js/jquery.magnific-popup.min.js"></script><script src="assets/js/main.js"></script></head><body><div class="app fr-wizard"><div class="app-header"><span>Calibration Wizard</span></div><div class="app-content"><div class="app-content--cell"><div class="app-sidebar"><div class="cell-wrapper"><div class="wizard-navigation"><h1>Wizard Spain</h1><ul class="sidebar-nav"><li><a href="/wizard_sp_tco/step-1.html">Printout & Visual Inspection</a><ul><li><a href="/wizard_sp_tco/step-1.html">Collect vehicle datas</a></li><li><a href="/wizard_sp_tco/step-1_1.html">Collect TCO datas</a></li><li><a href="/wizard_sp_tco/step-1_2.html">Installation template</a></li><li><a href="/wizard_sp_tco/step-1_3.html">Seales</a></li></ul></li><li><a href="/wizard_sp_tco/step-2.html">Seals and Tyres</a><ul><li><a href="/wizard_sp_tco/step-2.html">Visual seal inspection</a></li><li><a href="/wizard_sp_tco/step-2_1.html">Visual tyre inspection</a></li></ul></li><li><a href="/wizard_sp_tco/step-4.html">Check KITAS</a></li><li><a href="/wizard_sp_tco/step-5.html">Device Testing</a></li><li><a href="/wizard_sp_tco/step-6.html">Parametrization</a></li><li class="active"><a href="/wizard_sp_tco/step-7.html">Error Checks</a></li><li><a href="/wizard_sp_tco/step-8.html">Last Steps</a></li></ul></div></div></div><div class="app-panel"><div class="cell-wrapper"><div class="wt-form"><div class="wt-row__title"><div class="label">Error Checks</div></div><div class="wt-row__code"><pre><code>    &lt;HBox styleClass=&quot;wt-row__title&quot;&gt;
+         &lt;children&gt;
+            &lt;Label text=&quot;Error Checks&quot;/&gt;
+         &lt;/children&gt;
+    &lt;/HBox&gt;
+</code></pre></div><div class="wt-row__subtitle"><div class="label">Distance test</div></div><div class="wt-row__code"><pre><code>    &lt;VBox styleClass=&quot;wt-row__subtitle&quot;&gt;
+        &lt;children&gt;
+            &lt;Label text=&quot;Distance test&quot;/&gt;
+            &lt;Separator /&gt;
+        &lt;/children&gt;
+    &lt;/VBox&gt;
+</code></pre></div><div class="wt-row__button"><button>Calibration &gt; Check TCO &gt; Check distance</button></div><div class="wt-row__code"><pre><code>    &lt;HBox styleClass=&quot;wt-row__button&quot;&gt;
+        &lt;children&gt;
+            &lt;Button onAction=&quot;#navigateTo&quot; text=&quot;Calibration &gt; Check TCO &gt; Check distance&quot; mnemonicParsing=&quot;false&quot;/&gt;
+        &lt;/children&gt;
+    &lt;/HBox&gt;
+</code></pre></div><div class="wt-row__checkbox"><div class="label">Distance Checked</div><div class="checkbox"><input type="checkbox" name="checkbox1"><span class="check"></span></div></div><div class="wt-row__code"><pre><code>    &lt;HBox styleClass=&quot;wt-row__checkbox&quot;&gt;
+        &lt;children&gt;
+            &lt;Label text=&quot;Distance Checked&quot;/&gt;
+            &lt;Pane HBox.hgrow=&quot;ALWAYS&quot;/&gt;
+            &lt;CheckBox fx:id=&quot;checkbox&quot; mnemonicParsing=&quot;false&quot;/&gt;
+        &lt;/children&gt;
+    &lt;/HBox&gt;
+</code></pre></div><div class="wt-row__button"><button>Calibration &gt; Trial run</button></div><div class="wt-row__code"><pre><code>    &lt;HBox styleClass=&quot;wt-row__button&quot;&gt;
+        &lt;children&gt;
+            &lt;Button onAction=&quot;#navigateTo&quot; text=&quot;Calibration &gt; Trial run&quot; mnemonicParsing=&quot;false&quot;/&gt;
+        &lt;/children&gt;
+    &lt;/HBox&gt;
+</code></pre></div><div class="wt-row__input_md"><div class="label">New odometer value</div><input type="text"></div><div class="wt-row__code"><pre><code>    &lt;HBox styleClass=&quot;wt-row__input_md&quot;&gt;
+        &lt;children&gt;
+            &lt;Label text=&quot;New odometer value&quot;/&gt;
+            &lt;Pane HBox.hgrow=&quot;ALWAYS&quot;/&gt;
+            &lt;TextField fx:id=&quot;treadDepth&quot;/&gt;
+        &lt;/children&gt;
+    &lt;/HBox&gt;
+</code></pre></div></div><div class="wt-form--footer"><button class="prev">Prev</button><button class="next">Next</button></div></div></div></div></div><div class="app-footer"><button id="showFxml" title="Show/Hide FXML Code"><span class="show">&lt;&thinsp;+fxml/&gt;</span><span class="hide">&lt;&thinsp;—fxml/&gt;</span></button><button id="downloadFxml" title="Download FXML File">[&thinsp;&#8595;&thinsp;]</button></div><div id="fxml-header" style="display:none"><div class="wt-row__code"><pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 
 &lt;?import javafx.scene.control.*?&gt;
 &lt;?import javafx.scene.layout.*?&gt;
@@ -28,4 +63,4 @@
     &lt;children&gt;
 </code></pre></div></div><div id="fxml-footer" style="display:none"><div class="wt-row__code"><pre><code>    &lt;/children&gt;
 &lt;/VBox&gt;
-</code></pre></div></div></div></body></html>
+</code></pre></div></div></div><script src="./wizard_sp_tco/wizard.js"></script></body></html>
