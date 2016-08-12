@@ -1,4 +1,4 @@
-<!DOCTYPE html><!--if IE 8<html class="lt-ie9">--><!-- [if gt IE 8] <!--><html lang="en"><!-- <![endif]--><head><title>Printout &amp; Visual Inspection / Workshop Tab</title><base href="/"/><meta charset="UTF-8"/><link rel="apple-touch-icon" sizes="57x57" href="/assets/favicons/apple-touch-icon-57x57.png">
+<!DOCTYPE html><!--if IE 8<html class="lt-ie9">--><!-- [if gt IE 8] <!--><html lang="en"><!-- <![endif]--><head><title>Calibration Wizard / Workshop Tab</title><base href="/"/><meta charset="UTF-8"/><link rel="apple-touch-icon" sizes="57x57" href="/assets/favicons/apple-touch-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="/assets/favicons/apple-touch-icon-60x60.png">
 <link rel="apple-touch-icon" sizes="72x72" href="/assets/favicons/apple-touch-icon-72x72.png">
 <link rel="apple-touch-icon" sizes="76x76" href="/assets/favicons/apple-touch-icon-76x76.png">
@@ -17,8 +17,63 @@
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="msapplication-TileImage" content="/assets/favicons/mstile-144x144.png">
 <meta name="msapplication-config" content="/assets/favicons/browserconfig.xml">
-<meta name="theme-color" content="#ffffff"><!-- Google Fonts --><link rel="stylesheet" href="assets/css/magnific-popup.css"/><link rel="stylesheet" href="assets/css/metro.css"/><link rel="stylesheet" href="assets/css/wt-form.css"/><link rel="stylesheet" href="assets/css/style.css"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/styles/github.min.css"/><script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script><script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/highlight.min.js"></script><script src="assets/js/jquery.magnific-popup.min.js"></script><script src="assets/js/main.js"></script></head><body><div class="app"><div class="app-header"><span>Calibration Wizard</span></div><div class="app-content"><div class="app-content--cell"><div class="app-sidebar"><div class="cell-wrapper"><div class="wizard-navigation"><h1>Wizard MTCO</h1><ul class="sidebar-nav"><li><a href="/wizard_ge_mtco/index.html">Measurement type</a></li><li class="active"><a href="/wizard_ge_mtco/step-1.html">Common Test Steps</a></li><li><a href="/wizard_ge_mtco/step-2.html">Testing of Device’s Functions</a></li><li><a href="/wizard_ge_mtco/step-3.html">Security Check</a></li><li><a href="/wizard_ge_mtco/step-5.html">MTCO Parameterisation, Adaption and tolerance Check</a></li><li><a href="/wizard_ge_mtco/step-6.html">Create Report and Print Report</a></li></ul></div></div></div><div class="app-panel"><div class="cell-wrapper"><h2>Common Test Steps</h2><fieldset><section class="even"><label class="input-control checkbox"><input type="checkbox" name="checkbox1"><span class="check place-right"></span><span class="caption">Are the tyres on the drive axle permitted for this vehicle?</span></label><label class="input-control checkbox"><input type="checkbox" name="checkbox2"><span class="check place-right"></span><span class="caption">Does the tread depth of tyres on the drive shaft comply with the legal requirements?
-</span></label></section><section><div class="grid"><div class="row cells12"><div class="cell colspan4"><h4 class="titop">Tread depth</h4></div><div class="cell colspan7"><div class="input-control text full-size"><input type="text"></div></div><div class="cell colspan1 unit"><small>/ mm</small></div></div></div></section></fieldset><br><fieldset><section><label class="input-control checkbox"><input type="checkbox" name="checkbox1"><span class="check place-right"></span><span class="caption">Are no tieres with different dimensions mounted on the drive shaft?<a href="#test-modal-1" class="popup-modal clicktips">?</a></span></label></section><section><div class="grid"><div class="row cells12"><div class="cell colspan4"><h4 class="titop">Tyre size</h4></div><div class="cell colspan7"><div class="input-control text full-size"><input type="text" placeholder=""></div></div><div class="cell colspan1"></div></div></div></section><section><label class="input-control checkbox"><input type="checkbox" name="checkbox1"><span class="check place-right"></span><h4 class="ontop">Is the tire pressure on all wheels of the driving axle in accordance with the manufacturer’s instructions?<a href="#test-modal-2" class="popup-modal clicktips">?</a></h4></label></section><section><div class="grid"><div class="row cells12"><div class="cell colspan4"><h4 class="titop">Tire pressure</h4></div><div class="cell colspan7"><div class="input-control text full-size"><input type="text"></div></div><div class="cell colspan1 unit"><small>/ bar</small></div></div></div></section></fieldset><div id="test-modal-1" class="mfp-hide wt-popup"><div class="wt-popup__main"><h1>Description</h1><p>With mixed tyres perform no calibration. Also note re-cut tyres on back side of the calibration report.</p></div><div class="wt-popup__footer"><a href="#" class="popup-modal-dismiss">Close</a></div></div><div id="test-modal-2" class="mfp-hide wt-popup"><div class="wt-popup__main"><h1>Description</h1><p>Tire pressure of all wheels (twin-tyred vehicles also the 'inner' wheels) on the drive shaft must correspond to the manufacturer's requirements. Adapt if required.</p></div><div class="wt-popup__footer"><a href="#" class="popup-modal-dismiss">Close</a></div></div><fieldset class="onbottom"><section><div class="grid"><div class="row cells3"><div class="cell"></div><div class="cell"></div><div class="cell"><button class="button large-button primary full-size">Next</button></div></div></div></section></fieldset></div></div></div></div><div class="app-footer"><button id="showFxml" title="Show/Hide FXML Code"><span class="show">&lt;&thinsp;+fxml/&gt;</span><span class="hide">&lt;&thinsp;—fxml/&gt;</span></button><button id="downloadFxml" title="Download FXML File">[&thinsp;&#8595;&thinsp;]</button></div><div id="fxml-header" style="display:none"><div class="wt-row__code"><pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+<meta name="theme-color" content="#ffffff"><!-- Google Fonts --><link rel="stylesheet" href="assets/css/magnific-popup.css"/><link rel="stylesheet" href="assets/css/metro.css"/><link rel="stylesheet" href="assets/css/wt-form.css"/><link rel="stylesheet" href="assets/css/style.css"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/styles/github.min.css"/><script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script><script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/highlight.min.js"></script><script src="assets/js/jquery.magnific-popup.min.js"></script><script src="assets/js/main.js"></script></head><body><div class="app fr-wizard"><div class="app-header"><span>Calibration Wizard</span></div><div class="app-content"><div class="app-content--cell"><div class="app-sidebar"><div class="cell-wrapper"><div class="wizard-navigation"><h1>Wizard MTCO</h1><ul class="sidebar-nav"><li><a href="/wizard_ge_mtco/index.html">Measurement type</a></li><li class="active"><a href="/wizard_ge_mtco/step-1.html">Common Test Steps</a></li><li><a href="/wizard_ge_mtco/step-2.html">Testing of Device’s Functions</a></li><li><a href="/wizard_ge_mtco/step-3.html">Security Check</a></li><li><a href="/wizard_ge_mtco/step-5.html">MTCO Parameterisation, Adaption and tolerance Check</a></li><li><a href="/wizard_ge_mtco/step-6.html">Create Report and Print Report</a></li></ul></div></div></div><div class="app-panel"><div class="cell-wrapper"><div class="wt-form"><div class="wt-row__title"><div class="label">Common Test Steps</div></div><div class="wt-row__code"><pre><code>    &lt;HBox styleClass=&quot;wt-row__title&quot;&gt;
+         &lt;children&gt;
+            &lt;Label text=&quot;Common Test Steps&quot;/&gt;
+         &lt;/children&gt;
+    &lt;/HBox&gt;
+</code></pre></div><div class="wt-row__checkbox"><div class="label">Are the tyres on the drive axle permitted for this vehicle?</div><div class="checkbox"><input type="checkbox" name="checkbox1"><span class="check"></span></div></div><div class="wt-row__code"><pre><code>    &lt;HBox styleClass=&quot;wt-row__checkbox&quot;&gt;
+        &lt;children&gt;
+            &lt;Label text=&quot;Are the tyres on the drive axle permitted for this vehicle?&quot;/&gt;
+            &lt;Pane HBox.hgrow=&quot;ALWAYS&quot;/&gt;
+            &lt;CheckBox fx:id=&quot;checkbox&quot; mnemonicParsing=&quot;false&quot;/&gt;
+        &lt;/children&gt;
+    &lt;/HBox&gt;
+</code></pre></div><div class="wt-row__checkbox"><div class="label">Does the tread depth of tyres on the drive shaft comply with the legal requirements?</div><div class="checkbox"><input type="checkbox" name="checkbox1"><span class="check"></span></div></div><div class="wt-row__code"><pre><code>    &lt;HBox styleClass=&quot;wt-row__checkbox&quot;&gt;
+        &lt;children&gt;
+            &lt;Label text=&quot;Does the tread depth of tyres on the drive shaft comply with the legal requirements?&quot;/&gt;
+            &lt;Pane HBox.hgrow=&quot;ALWAYS&quot;/&gt;
+            &lt;CheckBox fx:id=&quot;checkbox&quot; mnemonicParsing=&quot;false&quot;/&gt;
+        &lt;/children&gt;
+    &lt;/HBox&gt;
+</code></pre></div><div class="wt-row__input_md"><div class="label">Tread depth (mm)</div><input type="text"></div><div class="wt-row__code"><pre><code>    &lt;HBox styleClass=&quot;wt-row__input_md&quot;&gt;
+        &lt;children&gt;
+            &lt;Label text=&quot;Tread depth (mm)&quot;/&gt;
+            &lt;Pane HBox.hgrow=&quot;ALWAYS&quot;/&gt;
+            &lt;TextField fx:id=&quot;treadDepth&quot;/&gt;
+        &lt;/children&gt;
+    &lt;/HBox&gt;
+</code></pre></div><div class="wt-row__helper-checkbox"><div class="label">Are no tieres with different dimensions mounted on the drive shaft?</div><a href="#test-modal-1" class="helper">?</a><div class="checkbox"><input type="checkbox" name="checkbox1"><span class="check"></span></div></div><div class="wt-row__code"><pre><code>    &lt;HBox styleClass=&quot;wt-row__helper-checkbox&quot;&gt;
+        &lt;children&gt;
+            &lt;Label text=&quot;Are no tieres with different dimensions mounted on the drive shaft?&quot;/&gt;
+            &lt;Pane fx:id=&quot;Helper&quot; /&gt;
+            &lt;Pane HBox.hgrow=&quot;ALWAYS&quot;/&gt;
+            &lt;CheckBox fx:id=&quot;checkbox&quot; mnemonicParsing=&quot;false&quot;/&gt;
+        &lt;/children&gt;
+    &lt;/HBox&gt;
+</code></pre></div><div class="wt-row__input_md"><div class="label">Tyre size</div><input type="text"></div><div class="wt-row__code"><pre><code>    &lt;HBox styleClass=&quot;wt-row__input_md&quot;&gt;
+        &lt;children&gt;
+            &lt;Label text=&quot;Tyre size&quot;/&gt;
+            &lt;Pane HBox.hgrow=&quot;ALWAYS&quot;/&gt;
+            &lt;TextField fx:id=&quot;treadDepth&quot;/&gt;
+        &lt;/children&gt;
+    &lt;/HBox&gt;
+</code></pre></div><div class="wt-row__helper-checkbox"><div class="label">Is the tire pressure on all wheels of the driving axle in accordance with the manufacturer’s instructions?</div><a href="#test-modal-2" class="helper">?</a><div class="checkbox"><input type="checkbox" name="checkbox1"><span class="check"></span></div></div><div class="wt-row__code"><pre><code>    &lt;HBox styleClass=&quot;wt-row__helper-checkbox&quot;&gt;
+        &lt;children&gt;
+            &lt;Label text=&quot;Is the tire pressure on all wheels of the driving axle in accordance with the manufacturer’s instructions?&quot;/&gt;
+            &lt;Pane fx:id=&quot;Helper&quot; /&gt;
+            &lt;Pane HBox.hgrow=&quot;ALWAYS&quot;/&gt;
+            &lt;CheckBox fx:id=&quot;checkbox&quot; mnemonicParsing=&quot;false&quot;/&gt;
+        &lt;/children&gt;
+    &lt;/HBox&gt;
+</code></pre></div><div class="wt-row__input_md"><div class="label">Tire pressure (bar)</div><input type="text"></div><div class="wt-row__code"><pre><code>    &lt;HBox styleClass=&quot;wt-row__input_md&quot;&gt;
+        &lt;children&gt;
+            &lt;Label text=&quot;Tire pressure (bar)&quot;/&gt;
+            &lt;Pane HBox.hgrow=&quot;ALWAYS&quot;/&gt;
+            &lt;TextField fx:id=&quot;treadDepth&quot;/&gt;
+        &lt;/children&gt;
+    &lt;/HBox&gt;
+</code></pre></div></div><div id="test-modal-1" class="mfp-hide wt-popup"><div class="wt-popup__main"><h1>Description</h1><p>With mixed tyres perform no calibration. Also note re-cut tyres on back side of the calibration report.</p></div><div class="wt-popup__footer"><a href="#" class="popup-modal-dismiss">Close</a></div></div><div id="test-modal-2" class="mfp-hide wt-popup"><div class="wt-popup__main"><h1>Description</h1><p>Tire pressure of all wheels (twin-tyred vehicles also the 'inner' wheels) on the drive shaft must correspond to the manufacturer's requirements. Adapt if required.</p></div><div class="wt-popup__footer"><a href="#" class="popup-modal-dismiss">Close</a></div></div><div class="wt-form--footer"><button class="next">Next</button></div></div></div></div></div><div class="app-footer"><button id="showFxml" title="Show/Hide FXML Code"><span class="show">&lt;&thinsp;+fxml/&gt;</span><span class="hide">&lt;&thinsp;—fxml/&gt;</span></button><button id="downloadFxml" title="Download FXML File">[&thinsp;&#8595;&thinsp;]</button></div><div id="fxml-header" style="display:none"><div class="wt-row__code"><pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 
 &lt;?import javafx.scene.control.*?&gt;
 &lt;?import javafx.scene.layout.*?&gt;
@@ -29,4 +84,4 @@
     &lt;children&gt;
 </code></pre></div></div><div id="fxml-footer" style="display:none"><div class="wt-row__code"><pre><code>    &lt;/children&gt;
 &lt;/VBox&gt;
-</code></pre></div></div></div></body></html>
+</code></pre></div></div></div><script src="./wizard_ge_mtco/wizard.js"></script></body></html>
