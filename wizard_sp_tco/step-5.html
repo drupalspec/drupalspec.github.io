@@ -17,59 +17,7 @@
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="msapplication-TileImage" content="/assets/favicons/mstile-144x144.png">
 <meta name="msapplication-config" content="/assets/favicons/browserconfig.xml">
-<meta name="theme-color" content="#ffffff"><!-- Google Fonts --><link rel="stylesheet" href="assets/css/magnific-popup.css"/><link rel="stylesheet" href="assets/css/metro.css"/><link rel="stylesheet" href="assets/css/wt-form.css"/><link rel="stylesheet" href="assets/css/style.css"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/styles/github.min.css"/><script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script><script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/highlight.min.js"></script><script src="assets/js/jquery.magnific-popup.min.js"></script><script src="assets/js/main.js"></script></head><body><div class="app fr-wizard"><div class="app-header"><span>Calibration Wizard</span></div><div class="app-content"><div class="app-content--cell"><div class="app-sidebar"><div class="cell-wrapper"><div class="wizard-navigation"><h1>Wizard Spain</h1><ul class="sidebar-nav"><li><a href="/wizard_sp_tco/step-1.html">Printout & Visual Inspection</a><ul><li><a href="/wizard_sp_tco/step-1.html">Collect vehicle datas</a></li><li><a href="/wizard_sp_tco/step-1_1.html">Collect TCO datas</a></li><li><a href="/wizard_sp_tco/step-1_2.html">Installation template</a></li><li><a href="/wizard_sp_tco/step-1_3.html">Seales</a></li></ul></li><li><a href="/wizard_sp_tco/step-2.html">Seals and Tyres</a><ul><li><a href="/wizard_sp_tco/step-2.html">Visual seal inspection</a></li><li><a href="/wizard_sp_tco/step-2_1.html">Visual tyre inspection</a></li></ul></li><li><a href="/wizard_sp_tco/step-4.html">Check KITAS</a></li><li class="active"><a href="/wizard_sp_tco/step-5.html">Device Testing</a></li><li><a href="/wizard_sp_tco/step-6.html">Parametrization</a></li><li><a href="/wizard_sp_tco/step-7.html">Error Checks</a></li><li><a href="/wizard_sp_tco/step-8.html">Last Steps</a></li></ul></div></div></div><div class="app-panel"><div class="cell-wrapper"><div class="wt-form"><div class="wt-row__title"><div class="label">Device Testing</div></div><div class="wt-row__code"><pre><code>    &lt;HBox styleClass=&quot;wt-row__title&quot;&gt;
-         &lt;children&gt;
-            &lt;Label text=&quot;Device Testing&quot;/&gt;
-         &lt;/children&gt;
-    &lt;/HBox&gt;
-</code></pre></div><div class="wt-row__checkbox"><div class="label">S/N sensor</div><div class="checkbox"><input type="checkbox" name="checkbox1"><span class="check"></span></div></div><div class="wt-row__code"><pre><code>    &lt;HBox styleClass=&quot;wt-row__checkbox&quot;&gt;
-        &lt;children&gt;
-            &lt;Label text=&quot;S/N sensor&quot;/&gt;
-            &lt;Pane HBox.hgrow=&quot;ALWAYS&quot;/&gt;
-            &lt;CheckBox fx:id=&quot;checkbox&quot; mnemonicParsing=&quot;false&quot;/&gt;
-        &lt;/children&gt;
-    &lt;/HBox&gt;
-</code></pre></div><div class="wt-row__button"><button>Parametrization TCO &gt; Parameters TCO &gt; Legal Parameters</button></div><div class="wt-row__code"><pre><code>    &lt;HBox styleClass=&quot;wt-row__button&quot;&gt;
-        &lt;children&gt;
-            &lt;Button onAction=&quot;#navigateTo&quot; text=&quot;Parametrization TCO &gt; Parameters TCO &gt; Legal Parameters&quot; mnemonicParsing=&quot;false&quot;/&gt;
-        &lt;/children&gt;
-    &lt;/HBox&gt;
-</code></pre></div><div class="wt-row__checkbox"><div class="label">While the diagram chart cheching, Checked speed scales, tolerances recorders, kms</div><div class="checkbox"><input type="checkbox" name="checkbox1"><span class="check"></span></div></div><div class="wt-row__code"><pre><code>    &lt;HBox styleClass=&quot;wt-row__checkbox&quot;&gt;
-        &lt;children&gt;
-            &lt;Label text=&quot;While the diagram chart cheching, Checked speed scales, tolerances recorders, kms&quot;/&gt;
-            &lt;Pane HBox.hgrow=&quot;ALWAYS&quot;/&gt;
-            &lt;CheckBox fx:id=&quot;checkbox&quot; mnemonicParsing=&quot;false&quot;/&gt;
-        &lt;/children&gt;
-    &lt;/HBox&gt;
-</code></pre></div><div class="wt-row__checkbox"><div class="label">Check the clock</div><div class="checkbox"><input type="checkbox" name="checkbox1"><span class="check"></span></div></div><div class="wt-row__code"><pre><code>    &lt;HBox styleClass=&quot;wt-row__checkbox&quot;&gt;
-        &lt;children&gt;
-            &lt;Label text=&quot;Check the clock&quot;/&gt;
-            &lt;Pane HBox.hgrow=&quot;ALWAYS&quot;/&gt;
-            &lt;CheckBox fx:id=&quot;checkbox&quot; mnemonicParsing=&quot;false&quot;/&gt;
-        &lt;/children&gt;
-    &lt;/HBox&gt;
-</code></pre></div><div class="wt-row__button"><button>Calibration &gt; Trial Run</button></div><div class="wt-row__code"><pre><code>    &lt;HBox styleClass=&quot;wt-row__button&quot;&gt;
-        &lt;children&gt;
-            &lt;Button onAction=&quot;#navigateTo&quot; text=&quot;Calibration &gt; Trial Run&quot; mnemonicParsing=&quot;false&quot;/&gt;
-        &lt;/children&gt;
-    &lt;/HBox&gt;
-</code></pre></div><div id="radio-last" class="wt-row__radiobuttons_yes"><div class="label">Is the tolerance below ±2% for the real distance and ±1%for the real Speed?</div><div class="radiobuttons"><div class="radio"><input type="radio" name="341"><span class="check"></span><span class="caption">Yes</span></div><div class="radio"><input type="radio" name="341"><span class="check"></span><span class="caption">No</span></div></div></div><div class="wt-row__code"><pre><code>    &lt;HBox styleClass=&quot;wt-row__radiobuttons_yes&quot; fx:id=&quot;radio-last&quot;&gt;
-        &lt;children&gt;
-            &lt;Label text=&quot;Is the tolerance below ±2% for the real distance and ±1%for the real Speed?&quot;/&gt;
-            &lt;Pane HBox.hgrow=&quot;ALWAYS&quot;/&gt;
-            &lt;RadioButton text=&quot;Yes&quot; mnemonicParsing=&quot;false&quot;/&gt;
-            &lt;RadioButton text=&quot;No&quot; mnemonicParsing=&quot;false&quot;/&gt;
-        &lt;/children&gt;
-    &lt;/HBox&gt;
-</code></pre></div><div id="radio-first" class="wt-row__radiobuttons_yes"><div class="label">All the components of the unit are OK?</div><div class="radiobuttons"><div class="radio"><input type="radio" name="342"><span class="check"></span><span class="caption">Yes</span></div><div class="radio"><input type="radio" name="342"><span class="check"></span><span class="caption">No</span></div></div></div><div class="wt-row__code"><pre><code>    &lt;HBox styleClass=&quot;wt-row__radiobuttons_yes&quot; fx:id=&quot;radio-first&quot;&gt;
-        &lt;children&gt;
-            &lt;Label text=&quot;All the components of the unit are OK?&quot;/&gt;
-            &lt;Pane HBox.hgrow=&quot;ALWAYS&quot;/&gt;
-            &lt;RadioButton text=&quot;Yes&quot; mnemonicParsing=&quot;false&quot;/&gt;
-            &lt;RadioButton text=&quot;No&quot; mnemonicParsing=&quot;false&quot;/&gt;
-        &lt;/children&gt;
-    &lt;/HBox&gt;
-</code></pre></div></div><div class="wt-form--footer"><button class="prev">Prev</button><button class="next">Next</button></div></div></div></div></div><div class="app-footer"><button id="showFxml" title="Show/Hide FXML Code"><span class="show">&lt;&thinsp;+fxml/&gt;</span><span class="hide">&lt;&thinsp;—fxml/&gt;</span></button><button id="downloadFxml" title="Download FXML File">[&thinsp;&#8595;&thinsp;]</button></div><div id="fxml-header" style="display:none"><div class="wt-row__code"><pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+<meta name="theme-color" content="#ffffff"><!-- Google Fonts --><link rel="stylesheet" href="assets/css/magnific-popup.css"/><link rel="stylesheet" href="assets/css/metro.css"/><link rel="stylesheet" href="assets/css/wt-form.css"/><link rel="stylesheet" href="assets/css/style.css"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/styles/github.min.css"/><script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script><script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/highlight.min.js"></script><script src="assets/js/jquery.magnific-popup.min.js"></script><script src="assets/js/main.js"></script></head><body><div class="app"><div class="app-header"><span>Device Testing</span></div><div class="app-content"><div class="app-content--cell"><div class="app-sidebar"><div class="cell-wrapper"><div class="wizard-navigation"><h1>Wizard Spain</h1><ul class="sidebar-nav"><li><a href="/wizard_sp_tco/step-1.html">Printout & Visual Inspection</a><ul><li><a href="/wizard_sp_tco/step-1.html">Collect vehicle datas</a></li><li><a href="/wizard_sp_tco/step-1_1.html">Collect TCO datas</a></li><li><a href="/wizard_sp_tco/step-1_2.html">Installation template</a></li><li><a href="/wizard_sp_tco/step-1_3.html">Seales</a></li></ul></li><li><a href="/wizard_sp_tco/step-2.html">Seals and Tyres</a><ul><li><a href="/wizard_sp_tco/step-2.html">Visual seal inspection</a></li><li><a href="/wizard_sp_tco/step-2_1.html">Visual tyre inspection</a></li></ul></li><li><a href="/wizard_sp_tco/step-4.html">Check KITAS</a></li><li class="active"><a href="/wizard_sp_tco/step-5.html">Device Testing</a></li><li><a href="/wizard_sp_tco/step-6.html">Parametrization</a></li><li><a href="/wizard_sp_tco/step-7.html">Error Checks</a></li><li><a href="/wizard_sp_tco/step-8.html">Last Steps</a></li></ul></div></div></div><div class="app-panel"><div class="cell-wrapper"><h2>Device Testing</h2><fieldset><section><label class="input-control checkbox"><input type="checkbox" name="checkbox2"><span class="check place-right"></span><span class="caption">Set date and time</span></label></section><section><button class="button large-button primary full-size">Parametrization TCO > Parameters TCO > Legal Parameters</button></section><section><label class="input-control checkbox"><input type="checkbox" name="checkbox2"><span class="check place-right"></span><h4 class="caption">While the diagram chart cheching, Checked speed scales, tolerances recorders, kms<br> done and time groups for first and second driver.</h4></label></section><section><label class="input-control checkbox"><input type="checkbox" name="checkbox2"><span class="check place-right"></span><span class="caption">Check the clock</span></label></section><section><button class="button large-button primary full-size">Calibration > Trial Run</button></section></fieldset><br><fieldset><section><div class="grid"><div class="row cells6"><div class="cell colspan4"><h4 class="ontop">Is the tolerance below ±2% for the real distance and ±1%for the real Speed?</h4></div><div class="cell colspan2"><label class="input-control radio"><input type="radio" name="radio1"><span class="check"></span><span class="caption">Yes</span></label><label class="input-control radio"><input type="radio" name="radio1" checked="checked"><span class="check"></span><span class="caption">No</span></label></div></div></div></section><section><div class="grid"><div class="row cells6"><div class="cell colspan4"><h4 class="ontop">All the components of the unit are OK?</h4></div><div class="cell colspan2"><label class="input-control radio"><input type="radio" name="radio111" checked="checked"><span class="check"></span><span class="caption">Yes</span></label><label class="input-control radio"><input type="radio" name="radio111"><span class="check"></span><span class="caption">No</span></label></div></div></div></section></fieldset><fieldset class="onbottom"><section><div class="grid"><div class="row cells3"><div class="cell"><button class="button large-button primary full-size">Prev</button></div><div class="cell"></div><div class="cell"><button class="button large-button primary full-size">Next</button></div></div></div></section></fieldset></div></div></div></div><div class="app-footer"><button id="showFxml" title="Show/Hide FXML Code"><span class="show">&lt;&thinsp;+fxml/&gt;</span><span class="hide">&lt;&thinsp;—fxml/&gt;</span></button><button id="downloadFxml" title="Download FXML File">[&thinsp;&#8595;&thinsp;]</button></div><div id="fxml-header" style="display:none"><div class="wt-row__code"><pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 
 &lt;?import javafx.scene.control.*?&gt;
 &lt;?import javafx.scene.layout.*?&gt;
@@ -80,4 +28,4 @@
     &lt;children&gt;
 </code></pre></div></div><div id="fxml-footer" style="display:none"><div class="wt-row__code"><pre><code>    &lt;/children&gt;
 &lt;/VBox&gt;
-</code></pre></div></div></div><script src="./wizard_sp_tco/wizard.js"></script></body></html>
+</code></pre></div></div></div></body></html>
