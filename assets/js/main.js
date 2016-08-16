@@ -4,38 +4,7 @@ $(function() {
     $('ul.sidebar-nav li.active > ul').addClass('expanded');
     $('ul.sidebar-nav li.active > ul').parent().addClass('expanded');
 
-    $('input:radio[name="reason"]').change(function() {
-        $('.reason').toggle();
-        $('.reasonon').toggle();
-    });
-
-    $('input:radio[name="reason2"]').change(function() {
-        $('.reason2').toggle();
-    });
-
-    $('input:radio[name="reason3"]').change(function() {
-        $('.reason3').toggle();
-    });
-
-    $('input:radio[name="reason4"]').change(function() {
-        $('.reason4').toggle();
-    });
-
-    $('input:radio[name="notify"]').change(function() {
-        $('.notify').toggle();
-    });
-
-    $('input:radio[name="notify3"]').change(function() {
-        $('.notify3').toggle();
-        $('.notify2').toggle();
-    });
-
-    $('input:radio[name="notify4"]').change(function() {
-        $('.notify4').toggle();
-    });
-
     /* Popups */
-
     $('.popup-modal, .helper').magnificPopup({
         type: 'inline',
         preloader: false,
@@ -57,10 +26,6 @@ $(function() {
     $(document).on('click', '.popup-modal-dismiss', function (e) {
         e.preventDefault();
         $.magnificPopup.close();
-    });
-
-    $( "input[name='radioUkMtco']" ).change(function() {
-      $('.wizard-navigation.show, .wizard-navigation.hide').toggle();
     });
 
 });
