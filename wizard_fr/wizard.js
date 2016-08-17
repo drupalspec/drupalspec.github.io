@@ -53,12 +53,12 @@ $(function() {
     $('#gotoE1 input:radio:first').attr('checked', true);
     $('#gotoE1 input:radio:last').change(function(e){
         e.preventDefault();
-        window.location.href = 'wizard_fr/step-3-e1.html';
+        window.location.href = '/wizard_fr/step-3-e1.html';
     });
 
     $('#gotoNotE1 input:radio:first').change(function(e){
         e.preventDefault();
-        window.location.href = 'wizard_fr/step-3.html';
+        window.location.href = '/wizard_fr/step-3.html';
     });
     $('#gotoNotE1 input:radio:last').attr('checked', true);
 
