@@ -5,12 +5,12 @@ $(function() {
     $('#gotoMTCO2 input:radio:last').change(function(e){
         e.preventDefault();
         console.log('d');
-        window.location.href = 'wizard_uk_mtco/index-mtco2.html';
+        window.location.href = '/wizard_uk_mtco/index-mtco2.html';
     });
 
     $('#gotoMTCO input:radio:first').change(function(e){
         e.preventDefault();
-        window.location.href = 'wizard_uk_mtco/index.html';
+        window.location.href = '/wizard_uk_mtco/index.html';
     });
     $('#gotoMTCO input:radio:last').attr('checked', true);
 
