@@ -65,27 +65,27 @@ $(function() {
     /* == MODALS */
     $('#gotoInspectionReport button').click(function(e){
         e.preventDefault();
-        showFullscreenPopup('assets/images/france-print-report.png');
+        showFullscreenPopup('/assets/images/france-print-report.png');
     });
     $('#gotoDistanceTest button').click(function(e){
         e.preventDefault();
-        showFullscreenPopup('assets/images/france-odometer.png');
+        showFullscreenPopup('/assets/images/france-odometer.png');
     });
     $('#gotoDtcoCalibration button').click(function(e){
         e.preventDefault();
-        showFullscreenPopup('assets/images/france-dtco-calibration.png');
+        showFullscreenPopup('/assets/images/france-dtco-calibration.png');
     });
     $('#gotoLegalParameter button').click(function(e){
         e.preventDefault();
-        showFullscreenPopup('assets/images/france-legal-parameter.png');
+        showFullscreenPopup('/assets/images/france-legal-parameter.png');
     });
     $('#gotoPinForm button').click(function(e){
         e.preventDefault();
-        showFullscreenPopup('assets/images/france-enter-pin.png');
+        showFullscreenPopup('/assets/images/france-enter-pin.png');
     });
     $('#gotoPinForm2 button').click(function(e){
         e.preventDefault();
-        showFullscreenPopup('assets/images/france-enter-pin.png');
+        showFullscreenPopup('/assets/images/france-enter-pin.png');
     });
 
     function showFullscreenPopup(src) {
