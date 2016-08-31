@@ -94,8 +94,7 @@ $(function() {
     }
 
     if ($('.wt-form .wt-row__code').length) {
-        // $("#showFxml, #downloadFxml").show();
-        $("#showFxml, #downloadFxml").hide();
+        $("#showFxml, #downloadFxml").show();
     }
 
     $("#showFxml").click(function(e){
