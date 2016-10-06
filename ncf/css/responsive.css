@@ -1,0 +1,184 @@
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .chosen-container {
+        width: 95px !important;
+    }
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+    .header {
+        height: 4rem;
+    }
+    .header-filter {
+        display: none;
+    }
+    .icon,
+    .timeline,
+    .header-filter, .popup {
+        display: none;
+    }
+    .events-row .event,
+    .events-row .event:first-child {
+        padding-left: 3rem;
+        max-width: 100%;
+        padding-bottom: 4rem;
+        margin-left: -1.8rem;
+    }
+    .events-row {
+        padding-top: 8rem;
+        display: block;
+        border-left: 2px solid #4a90e2;
+        margin-left: 1rem;
+
+    }
+    .event-week,
+    .event-day {
+        margin-left: -1rem;
+    }
+    .event-item {
+        width: 17.5rem;
+        display: inline-table;
+    }
+    .header .header-logo {
+        margin: 4px auto 0;
+        float: none;
+        text-align: center;
+    }
+    .compact-mode .event {
+        overflow: hidden;
+    }
+    footer,
+    .header .menu-toggle,
+    footer .icon {
+        display: block;
+    }
+    .icon.icon-calendar {
+        left: 0;
+        border-left: 0;
+        top: auto;
+    }
+    .icon.icon-plus-squared {
+        left: 5rem;
+        top:auto;
+    }
+    .icon.icon-logout {
+        right:0;
+        bottom: 0;
+        left:auto;
+        border-right: 0;
+    }
+    .icon {
+        font-size: 2.3rem;
+        padding: 0.4rem;
+        width: 3rem;
+        height: 3.1rem;
+        border-bottom: 0;
+        bottom: 0;
+    }
+    .events-row .event:first-child.active {
+        padding-left: 3rem;
+    }
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+    .header {
+        height: 4rem;
+    }
+    .icon,
+    .timeline,
+    .popup,  .header-filter {
+        display: none;
+    }
+    .events-row .event,
+    .events-row .event:first-child {
+        padding-left: 3rem;
+        max-width: 100%;
+        padding-bottom: 4rem;
+        margin-left: -1.8rem;
+    }
+    .events-row {
+        padding-top: 8rem;
+        display: block;
+        border-left: 2px solid #4a90e2;
+        margin-left: 1rem;
+
+    }
+    .event-week,
+    .event-day {
+        margin-left: -1rem;
+    }
+    .event-item {
+        width: 17.1rem;
+        display: inline-table;
+    }
+    .header .header-logo {
+        margin: 5px auto 0;
+        float: none;
+        text-align: center;
+    }
+    .compact-mode .event {
+        overflow: hidden;
+    }
+    footer,
+    .header .menu-toggle,
+    footer .icon {
+        display: block;
+    }
+    .icon.icon-calendar {
+        left: 0;
+        border-left: 0;
+        top: auto;
+    }
+    .icon.icon-plus-squared {
+        left: 5rem;
+        top:auto;
+    }
+    .icon.icon-logout {
+        right:0;
+        bottom: 0;
+        left:auto;
+        border-right: 0;
+    }
+    .icon {
+        font-size: 2.3rem;
+        padding: 0.4rem;
+        width: 3rem;
+        height: 3.1rem;
+        border-bottom: 0;
+        bottom: 0;
+    }
+    .events-row .event:first-child.active {
+        padding-left: 3rem;
+    }
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+    body {
+        min-width: 320px;
+    }
+    .events-row .event .event-item {
+        margin-bottom: 1rem;
+    }
+    .events-row .event .event-item .event-box .event-item--type {
+        display: none;
+    }
+    .events-row .event .event-item .event-box {
+        width: 10rem;
+    }
+    .event-item {
+        width: 11rem;
+        float: left;
+    }
+    .events-row .event {
+        overflow: hidden;
+    }
+    .header .header-logo {
+        background: url(../img/logo-md.png) no-repeat;
+        width: 217px;
+        height: 13px;
+        margin: 5px auto 0;
+    }
+}
