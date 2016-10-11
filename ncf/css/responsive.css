@@ -93,10 +93,17 @@
     }
     .compact-mode .events-row .event .event-week:before {
         left: -.6rem;
+<<<<<<< HEAD
     }
     .events-row .event:last-child {
         padding-bottom: 5rem;
     }
+=======
+    }
+    .events-row .event:last-child {
+        padding-bottom: 5rem;
+    }
+>>>>>>> 0d2b1166cb851e9fb106de743158591a2dfe5638
     .compact-mode .events-row .event .event-item:last-child {
         margin-bottom: 4rem;
     }
@@ -271,6 +278,20 @@
     }
     .overlay-calendar {
         background: #fff;
+<<<<<<< HEAD
+    }
+    .popup.add-event {
+        width: 80%;
+        margin-left: -40%;
+    }
+    .popup.add-event .col-1, .popup.add-event .col-2 {
+        float: none;
+        width: 100%;
+    }
+    .popup.add-event .col-2 {
+        margin-left: 0;
+=======
+>>>>>>> 0d2b1166cb851e9fb106de743158591a2dfe5638
     }
 }
 
