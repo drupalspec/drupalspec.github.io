@@ -66,7 +66,6 @@ $('.overlay, .close, .login button').click(function() {
     $('.overlay').toggle();
     $('.login, .add-event').hide();
     $('.header-filter, .header-filter button').hide();
-<<<<<<< HEAD
 });
 
 
@@ -156,6 +155,4 @@ $(function() {
 
 
 
-=======
->>>>>>> 0d2b1166cb851e9fb106de743158591a2dfe5638
 });
