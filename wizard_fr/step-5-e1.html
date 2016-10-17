@@ -22,7 +22,19 @@
             &lt;Label text=&quot;Tyre datas&quot;/&gt;
          &lt;/children&gt;
     &lt;/HBox&gt;
-</code></pre></div><div class="wt-row__input_md"><div class="label">Tyre brand</div><div class="mod--plus-minus"><button>+</button><select><option>Continental</option><option>Bridgestone</option><option>Other</option></select><button>–</button></div></div><div class="wt-row__code"><pre><code>    NO CODE HERE
+</code></pre></div><div class="wt-row__input_md"><div class="label">Tyre brand</div><div class="mod--plus-minus"><button>+</button><select><option>Опция 1</option><option>Опция 2</option><option>Опция 3</option></select><button>–</button></div></div><div class="wt-row__code"><pre><code>    &lt;HBox styleClass=&quot;wt-row__input_md&quot;&gt;
+        &lt;children&gt;
+            &lt;Label text=&quot;Селект с плюсом-минусом&quot; /&gt;
+            &lt;Pane HBox.hgrow=&quot;ALWAYS&quot; /&gt;
+            &lt;HBox styleClass=&quot;mod--plus-minus&quot;&gt;
+               &lt;children&gt;
+                      &lt;Button text=&quot;+&quot;/&gt;
+                      &lt;ComboBox /&gt;
+                      &lt;Button text=&quot;-&quot;/&gt;
+               &lt;/children&gt;
+            &lt;/HBox&gt;
+        &lt;/children&gt;
+    &lt;/HBox&gt;
 </code></pre></div><div class="wt-row__input_md"><div class="label">Tyre dimension is</div><input type="text" placeholder="315/70 R22.5"></div><div class="wt-row__code"><pre><code>    &lt;HBox styleClass=&quot;wt-row__input_md&quot;&gt;
         &lt;children&gt;
             &lt;Label text=&quot;Tyre dimension is&quot;/&gt;
