@@ -18,9 +18,8 @@
 <meta name="msapplication-TileImage" content="/assets/favicons/mstile-144x144.png">
 <meta name="msapplication-config" content="/assets/favicons/browserconfig.xml">
 <meta name="theme-color" content="#ffffff"><link rel="stylesheet" href="assets/css/style.css"/><script src="assets/js/jquery-2.2.2.min.js"></script><script src="assets/js/jquery.magnific-popup.min.js"></script><script src="assets/js/highlight.min.js"></script><script src="assets/js/main.js"></script></head><link rel="stylesheet" type="text/css" href="/manual/print.css" media="print"><body><div class="app fr-wizard"><div class="app-header"><span>UI Manual</span></div><div class="app-content"><div class="app-content--cell"><div class="app-sidebar"><div class="cell-wrapper"><div class="wizard-navigation"><h1>UI Manual</h1><ul class="sidebar-nav"><li class="active"><a href="/manual/index.html">Layout</a></li><li><a href="/manual/generator.html">Generator</a></li></ul></div></div></div><div class="app-panel"><div class="cell-wrapper"><div class="wt-form"><div class="wt-row__title"><div class="label">Лэйаут</div></div><div class="wt-row__subtitle"><div class="label">Правила работы</div></div><div class="wt-row"><p>SceneBuilder используется только как просмотрщик. Все изменения в код должны вводиться руками.</p>
-<p>Надо максимально избегать стилей в тексте: <code>maxWidth</code>, <code>prefHeight</code>, <code>minWidth</code>, <code>minHeight</code>, <code>&lt;Insets&gt;</code> и прочая ерунда запрещены.</p>
+<p>Надо максимально избегать стилей в тексте и любых аттрибутов. <code>maxWidth</code>, <code>prefHeight</code>, <code>minWidth</code>, <code>minHeight</code>, <code>&lt;Insets&gt;</code> и прочие аттрибутызапрещены.</p>
 <p>При переверстке текущих шаблонов надо особенно аккуратными быть с параметрами <code>text</code>, <code>fx:define</code>, <code>fx:id</code> и <code>id</code>. Не копируйте бездумно из примеров, а обязательно заменяйте на текущие значения.</p>
-<p>Внутренний CSS для JavaFX — <a href="/manual/modena.css">modena.css</a>, <a href="/manual/caspian.css">caspian.css</a></p>
 </div><div class="wt-row__subtitle"><div class="label">Основной файл визарда</div></div><div class="wt-row__code"><p><div class="label">FXML</div></p>
 <pre><code>    &lt;SplitPane id=&quot;splitPane&quot; dividerPositions=&quot;0.24&quot;
            stylesheets=&quot;@../../../common/css/metro-ui.css&quot;
@@ -63,11 +62,14 @@
 </code></pre></div><div class="wt-row"><p>После кажого лейбла со знаком вопроса или без надо размещать спейсер.</p>
 </div><div class="wt-row__code"><p><div class="label">FXML</div></p>
 <pre><code>    &lt;Pane HBox.hgrow=&quot;ALWAYS&quot;/&gt;
-</code></pre></div><div class="wt-row__subtitle"><div class="label">Радиобаттоны и чекбоксы</div></div><div class="wt-row__code"><p><div class="label">FXML</div></p>
-<pre><code>    &lt;RadioButton fx:id=&quot;radiobutton&quot; text=&quot;OK&quot; toggleGroup=&quot;$tgManipulation&quot; mnemonicParsing=&quot;false&quot; /&gt;
+</code></pre></div><!--.wt-row__subtitle.label Радиобаттоны и чекбоксы
+--><!--.wt-row__code:markdown
+    <div class="label">FXML</div>
+    ```
+        <RadioButton fx:id="radiobutton" text="OK" toggleGroup="$tgManipulation" mnemonicParsing="false" />
 
-    &lt;CheckBox fx:id=&quot;checkbox&quot; mnemonicParsing=&quot;false&quot; /&gt;
-</code></pre></div></div></div></div></div></div><div class="app-footer"><div class="app-footer__buttons"><button id="showFxml" title="Show/Hide FXML Code"><span class="show">&lt;&thinsp;+fxml/&gt;</span><span class="hide">&lt;&thinsp;—fxml/&gt;</span></button><button id="downloadFxml" title="Download FXML File">[&thinsp;&#8595;&thinsp;]</button></div><p class="app-footer__copyright">Property of Fartskriver Solutions AS</p></div><div id="fxml-header" style="display:none"><div class="wt-row__code"><pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+        <CheckBox fx:id="checkbox" mnemonicParsing="false" />
+    ```--></div></div></div></div></div><div class="app-footer"><div class="app-footer__buttons"><button id="showFxml" title="Show/Hide FXML Code"><span class="show">&lt;&thinsp;+fxml/&gt;</span><span class="hide">&lt;&thinsp;—fxml/&gt;</span></button><button id="downloadFxml" title="Download FXML File">[&thinsp;&#8595;&thinsp;]</button></div><p class="app-footer__copyright">Property of Fartskriver Solutions AS</p></div><div id="fxml-header" style="display:none"><div class="wt-row__code"><pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 
 &lt;?import javafx.scene.control.*?&gt;
 &lt;?import javafx.scene.layout.*?&gt;
