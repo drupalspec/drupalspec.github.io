@@ -17,7 +17,7 @@
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="msapplication-TileImage" content="/assets/favicons/mstile-144x144.png">
 <meta name="msapplication-config" content="/assets/favicons/browserconfig.xml">
-<meta name="theme-color" content="#ffffff"><link rel="stylesheet" href="assets/css/style.css"/><script src="assets/js/jquery-2.2.2.min.js"></script><script src="assets/js/jquery.magnific-popup.min.js"></script><script src="assets/js/highlight.min.js"></script><script src="assets/js/main.js"></script></head><body><div class="app fr-wizard"><div class="app-header"><span>UI Manual</span></div><div class="app-content"><div class="app-content--cell"><div class="app-sidebar"><div class="cell-wrapper"><div class="wizard-navigation"><h1>UI Manual</h1><ul class="sidebar-nav"><li><a href="/manual/index.html">Layout</a></li><li><a href="/manual/library.html">UI Library</a></li><li class="active"><a href="/manual/generator.html">Generator</a></li></ul></div></div></div><div class="app-panel"><div class="cell-wrapper"><div class="wt-form"><div class="wt-row__title"><div class="label">Заголовок</div></div><div class="wt-row__code"><pre><code>    &lt;HBox styleClass=&quot;wt-row__title&quot;&gt;
+<meta name="theme-color" content="#ffffff"><link rel="stylesheet" href="assets/css/style.css"/><script src="assets/js/jquery-2.2.2.min.js"></script><script src="assets/js/jquery.magnific-popup.min.js"></script><script src="assets/js/highlight.min.js"></script><script src="assets/js/main.js"></script></head><link rel="stylesheet" type="text/css" href="/manual/print.css" media="print"><body><div class="app fr-wizard"><div class="app-header"><span>UI Manual</span></div><div class="app-content"><div class="app-content--cell"><div class="app-sidebar"><div class="cell-wrapper"><div class="wizard-navigation"><h1>UI Manual</h1><ul class="sidebar-nav"><li><a href="/manual/index.html">Layout</a></li><li class="active"><a href="/manual/generator.html">Generator</a></li></ul></div></div></div><div class="app-panel"><div class="cell-wrapper"><div class="wt-form"><div class="wt-row__title"><div class="label">Заголовок</div></div><div class="wt-row__code"><pre><code>    &lt;HBox styleClass=&quot;wt-row__title&quot;&gt;
          &lt;children&gt;
             &lt;Label text=&quot;Заголовок&quot;/&gt;
          &lt;/children&gt;
@@ -187,19 +187,6 @@
             &lt;TextField fx:id=&quot;treadDepth&quot;/&gt;
         &lt;/children&gt;
     &lt;/HBox&gt;
-</code></pre></div><div class="wt-row__input_md"><div class="label">Поле ввода с кнопками</div><div class="mod--plus-minus"><button>+</button><select><option>Опция 1</option><option>Опция 2</option><option>Опция 3</option></select><button>–</button></div></div><div class="wt-row__code"><pre><code>    &lt;HBox styleClass=&quot;wt-row__input_md&quot;&gt;
-        &lt;children&gt;
-            &lt;Label text=&quot;Селект с плюсом-минусом&quot; /&gt;
-            &lt;Pane HBox.hgrow=&quot;ALWAYS&quot; /&gt;
-            &lt;HBox styleClass=&quot;mod--plus-minus&quot;&gt;
-               &lt;children&gt;
-                      &lt;Button text=&quot;+&quot;/&gt;
-                      &lt;ComboBox /&gt;
-                      &lt;Button text=&quot;-&quot;/&gt;
-               &lt;/children&gt;
-            &lt;/HBox&gt;
-        &lt;/children&gt;
-    &lt;/HBox&gt;
 </code></pre></div><div class="wt-row__subtitle"><div class="label">Выбор даты</div></div><div class="wt-row__code"><pre><code>    &lt;VBox styleClass=&quot;wt-row__subtitle&quot;&gt;
         &lt;children&gt;
             &lt;Label text=&quot;Выбор даты&quot;/&gt;
@@ -262,6 +249,19 @@
             &lt;Label text=&quot;Селектор&quot;/&gt;
             &lt;Pane HBox.hgrow=&quot;ALWAYS&quot;/&gt;
             &lt;ComboBox fx:id=&quot;comboBox&quot; /&gt;
+        &lt;/children&gt;
+    &lt;/HBox&gt;
+</code></pre></div><div class="wt-row__input_md"><div class="label">Селектор с кнопками</div><div class="mod--plus-minus"><button>+</button><select><option>Опция 1</option><option>Опция 2</option><option>Опция 3</option></select><button>–</button></div></div><div class="wt-row__code"><pre><code>    &lt;HBox styleClass=&quot;wt-row__input_md&quot;&gt;
+        &lt;children&gt;
+            &lt;Label text=&quot;Селект с плюсом-минусом&quot; /&gt;
+            &lt;Pane HBox.hgrow=&quot;ALWAYS&quot; /&gt;
+            &lt;HBox styleClass=&quot;mod--plus-minus&quot;&gt;
+               &lt;children&gt;
+                      &lt;Button text=&quot;+&quot;/&gt;
+                      &lt;ComboBox /&gt;
+                      &lt;Button text=&quot;-&quot;/&gt;
+               &lt;/children&gt;
+            &lt;/HBox&gt;
         &lt;/children&gt;
     &lt;/HBox&gt;
 </code></pre></div><div class="wt-row__helper-input_lg"><div class="label">Селектор большой</div><a href="#test-modal-1" class="helper">?</a><select><option>Опция 1</option><option>Опция 2</option><option>Опция 3</option></select></div><div class="wt-row__code"><pre><code>    &lt;HBox styleClass=&quot;wt-row__helper-input_lg&quot;&gt;
