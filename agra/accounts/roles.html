@@ -1,0 +1,30 @@
+
+<div>
+  <h2 class="ui header">Roles</h2>
+  <div class="ui form">
+    <div class="inline field ta-right">
+      <!--label Order by:-->
+      <!--select.ui.dropdown(name='actions')option(value='name') Name
+      -->
+      <button ui-sref="accounts.roles.add" class="ui teal button">Add Role</button>
+    </div>
+  </div>
+  <table class="ui table">
+    <thead>
+      <tr>
+        <th>&nbsp;</th>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="role in roles">
+        <td>{{role.code}}</td>
+        <td width="75%">{{role.name}}</td>
+        <td nowrap="nowrap">{{role.system}}</td>
+        <td nowrap="nowrap"><a ui-sref="accounts.roles.edit">Edit</a>&nbsp;|&nbsp;<a ui-sref="accounts.roles.delete">Delete</a></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
