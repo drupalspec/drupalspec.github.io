@@ -1,0 +1,19 @@
+
+<div>
+  <h1 ng-if="mode === 'new'" class="page-header">Add Type</h1>
+  <h1 ng-if="mode !== 'new'" class="page-header">Edit Type</h1>
+  <form>
+    <div class="row form-group">
+      <div class="col-md-6">
+        <label>Type Name</label>
+        <input type="text" name="first-name" ng-model="type.name" class="form-control"/>
+      </div>
+    </div>
+    <!--.field
+    label Type Code
+    input(type='text', name='text', ng-model="type.code")
+    -->
+    <button ui-sref="^" class="btn btn-primary">Save</button>
+    <button ui-sref="^" class="btn btn-default">Cancel</button>
+  </form>
+</div>

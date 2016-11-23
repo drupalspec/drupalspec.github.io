@@ -1,0 +1,35 @@
+
+<div>
+  <h1 class="page-header">Users</h1>
+  <form class="text-right">
+    <p>
+      <button ui-sref="accounts.users.add" class="btn btn-info">Add User</button>
+    </p>
+  </form>
+  <table class="table table-condensed table-hover users">
+    <thead>
+      <tr class="active">
+        <th>Name</th>
+        <th>Title</th>
+        <th>Date Joined</th>
+        <th>Status</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="user in users">
+        <td>
+          <h4 class="ui image header"><img ng-src="{{user.avatar}}" class="ui mini rounded image"/>
+            <div class="content">{{user.name}}
+              <div class="sub header">{{user.email}}</div>
+            </div>
+          </h4>
+        </td>
+        <td>{{user.title}}</td>
+        <td>{{user.date_joined|date:"short"}}</td>
+        <td>{{user.status}}</td>
+        <td><a ui-sref="accounts.users.edit">Edit</a>&nbsp;|&nbsp;<a ui-sref="accounts.users.delete">Delete</a></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

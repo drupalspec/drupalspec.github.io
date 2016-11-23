@@ -1,0 +1,46 @@
+
+<div>
+  <div class="page-header">
+    <h1>Fields</h1>
+  </div>
+  <form class="form-inline">
+    <div class="form-group">
+      <label>Sort by:</label>
+      <select class="form-control">
+        <option value="">Area</option>
+        <option value="name">Sri Lanka</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <select class="form-control">
+        <option value="">Farm</option>
+        <option value="wheat">Wheat Farm</option>
+        <option value="rye">Rye Farm</option>
+        <option value="soy">Soy Farm</option>
+      </select>
+    </div>
+    <button ui-sref="fields.list.add" class="pull-right btn btn-info">Add Field</button>
+  </form><br/>
+  <table class="table table-condensed table-hover">
+    <thead>
+      <tr class="active">
+        <th>Name</th>
+        <th>Farm</th>
+        <th>Cluster</th>
+        <th>Season</th>
+        <th>History</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="type in $ctrl.types">
+        <td>{{type}} field</td>
+        <td><a ui-sref="fields.farms.edit">{{type}} farm</a></td>
+        <td><a ui-sref="fields.areas.edit({id: 1})">Colombo</a></td>
+        <td>Season #3</td>
+        <td><a ui-sref="fields.list.history">Seasons History</a></td>
+        <td><a ui-sref="fields.list.edit" class="btn btn-success btn-xs">Edit</a>&nbsp; &nbsp;<a ui-sref="fields.list.delete" class="btn btn-danger btn-xs">Delete</a></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,25 @@
+
+<div>
+  <h1 class="page-header">Types</h1>
+  <form class="text-right">
+    <p>
+      <button ui-sref="activities.types.add" class="btn btn-info">Add type</button>
+    </p>
+  </form>
+  <table class="table table-condensed table-hover">
+    <thead>
+      <tr class="active">
+        <th>Name</th>
+        <!--th Code-->
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="type in $ctrl.types">
+        <td width="80%">{{type.name}}</td>
+        <!--td {{type.code}}-->
+        <td no-wrap="no-wrap"><a ui-sref="activities.types.edit" class="btn btn-success btn-xs">Edit</a>&nbsp; &nbsp;<a ui-sref="activities.types.delete" class="btn btn-danger btn-xs">Delete</a></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

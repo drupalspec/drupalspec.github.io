@@ -1,0 +1,74 @@
+
+<div>
+  <h1 ng-if="mode === 'new'" class="page-header">Add User</h1>
+  <h1 ng-if="mode !== 'new'" class="page-header">Edit User</h1>
+  <div class="panel panel-default">
+    <div class="panel-body">
+      <form>
+        <div class="row form-group">
+          <div class="col-md-12">
+            <label>Login</label>
+            <input type="text" name="first-name" ng-model="user.name" class="form-control"/>
+          </div>
+        </div>
+        <div class="row form-group">
+          <div class="col-md-12">
+            <label>Email</label>
+            <input type="email" name="email" placeholder="" ng-model="user.email" class="form-control"/>
+          </div>
+        </div>
+        <div class="row form-group">
+          <div class="col-md-12">
+            <label>Password</label>
+            <input type="password" name="password" placeholder="" ng-model="user.password" class="form-control"/>
+          </div>
+        </div>
+        <div class="row form-group">
+          <div class="col-md-12">
+            <div class="checkbox">
+              <label>
+                <input type="checkbox"/> Top Manager TO
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox"/> Cultiovation Manager CM
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" checked="checked"/> Area Manager AM
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox"/> Field Officer FO
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="row form-group">
+          <div class="col-md-12">
+            <label>Manager comments</label>
+            <textarea rows="3" ng-model="user.comments" class="form-control"></textarea>
+          </div>
+        </div>
+        <div class="row form-group">
+          <div class="col-md-12">
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" checked="checked"/> Activate
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <button ui-sref="^" class="btn btn-primary">Save</button>
+            <button ui-sref="^" class="btn btn-default">Cancel</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
