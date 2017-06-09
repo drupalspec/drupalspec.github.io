@@ -1,0 +1,100 @@
+<!DOCTYPE html><!--if IE 8<html class="lt-ie9">--><!-- [if gt IE 8] <!--><html lang="en"><!-- <![endif]--><head><title>Calibration Wizard / Workshop Tab</title><base href="/"/><meta charset="UTF-8"/><link rel="apple-touch-icon" sizes="57x57" href="/assets/favicons/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/assets/favicons/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/assets/favicons/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/assets/favicons/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/assets/favicons/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/assets/favicons/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/assets/favicons/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/assets/favicons/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" href="/assets/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/assets/favicons/android-chrome-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="/assets/favicons/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/assets/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="/assets/favicons/manifest.json">
+<link rel="mask-icon" href="/assets/favicons/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="/assets/favicons/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-TileImage" content="/assets/favicons/mstile-144x144.png">
+<meta name="msapplication-config" content="/assets/favicons/browserconfig.xml">
+<meta name="theme-color" content="#ffffff"><link rel="stylesheet" href="assets/css/style.css"/><script src="assets/js/jquery-2.2.2.min.js"></script><script src="assets/js/jquery.magnific-popup.min.js"></script><script src="assets/js/highlight.min.js"></script><script src="assets/js/main.js"></script></head><body><div class="app fr-wizard"><div class="app-header"><span>Calibration Wizard</span></div><div class="app-content"><div class="app-content--cell"><div class="app-sidebar"><div class="cell-wrapper"><div class="wizard-navigation"><h1>Wizard MTCO</h1><ul class="sidebar-nav"><li><a href="/wizard_ge_mtco/index.html">Measurement type</a></li><li><a href="/wizard_ge_mtco/step-1.html">Common Test Steps</a></li><li><a href="/wizard_ge_mtco/step-2.html">Testing of Device’s Functions</a></li><li class="active"><a href="/wizard_ge_mtco/step-3.html">Security Check</a></li><li><a href="/wizard_ge_mtco/step-5.html">MTCO Parameterisation, Adaption and tolerance Check</a></li><li><a href="/wizard_ge_mtco/step-6.html">Create Report and Print Report</a></li></ul></div></div></div><div class="app-panel"><div class="cell-wrapper"><div class="wt-form"><div class="wt-row__title"><div class="label">Security Check</div></div><div class="wt-row__code"><pre><code>    &lt;HBox styleClass=&quot;wt-row__title&quot;&gt;
+         &lt;children&gt;
+            &lt;Label text=&quot;Security Check&quot;/&gt;
+         &lt;/children&gt;
+    &lt;/HBox&gt;
+</code></pre></div><div id="showreason" class="wt-row__helper-radiobuttons_ok"><div class="label">Are visible manipulation hints at the tachograph system recognizable (sealing, defects, ect.)?</div><a href="#test-modal-1" class="helper">?</a><div class="radiobuttons"><div class="radio"><input type="radio" name="341"><span class="check"></span><span class="caption">OK</span></div><div class="radio"><input type="radio" name="341"><span class="check"></span><span class="caption">Not OK</span></div></div></div><div class="wt-row__code"><pre><code>    &lt;HBox styleClass=&quot;wt-row__helper-radiobuttons_ok&quot; fx:id=&quot;showreason&quot;&gt;
+        &lt;children&gt;
+            &lt;Label text=&quot;Are visible manipulation hints at the tachograph system recognizable (sealing, defects, ect.)?&quot;/&gt;
+            &lt;Pane fx:id=&quot;Helper&quot; /&gt;
+            &lt;Pane HBox.hgrow=&quot;ALWAYS&quot;/&gt;
+            &lt;RadioButton text=&quot;OK&quot; mnemonicParsing=&quot;false&quot;/&gt;
+            &lt;RadioButton text=&quot;Not OK&quot; mnemonicParsing=&quot;false&quot;/&gt;
+        &lt;/children&gt;
+    &lt;/HBox&gt;
+</code></pre></div><div id="reason" class="wt-row__input_md"><div class="label">Enter the reason</div><input type="text"></div><div class="wt-row__code"><pre><code>    &lt;HBox styleClass=&quot;wt-row__input_md&quot; fx:id=&quot;reason&quot;&gt;
+        &lt;children&gt;
+            &lt;Label text=&quot;Enter the reason&quot;/&gt;
+            &lt;Pane HBox.hgrow=&quot;ALWAYS&quot;/&gt;
+            &lt;TextField fx:id=&quot;treadDepth&quot;/&gt;
+        &lt;/children&gt;
+    &lt;/HBox&gt;
+</code></pre></div><div id="showreason-two" class="wt-row__helper-radiobuttons_ok"><div class="label">Visible control MTCO</div><a href="#test-modal-2" class="helper">?</a><div class="radiobuttons"><div class="radio"><input type="radio" name="342"><span class="check"></span><span class="caption">OK</span></div><div class="radio"><input type="radio" name="342"><span class="check"></span><span class="caption">Not OK</span></div></div></div><div class="wt-row__code"><pre><code>    &lt;HBox styleClass=&quot;wt-row__helper-radiobuttons_ok&quot; fx:id=&quot;showreason-two&quot;&gt;
+        &lt;children&gt;
+            &lt;Label text=&quot;Visible control MTCO&quot;/&gt;
+            &lt;Pane fx:id=&quot;Helper&quot; /&gt;
+            &lt;Pane HBox.hgrow=&quot;ALWAYS&quot;/&gt;
+            &lt;RadioButton text=&quot;OK&quot; mnemonicParsing=&quot;false&quot;/&gt;
+            &lt;RadioButton text=&quot;Not OK&quot; mnemonicParsing=&quot;false&quot;/&gt;
+        &lt;/children&gt;
+    &lt;/HBox&gt;
+</code></pre></div><div id="reason-two" class="wt-row__input_md"><div class="label">Enter the reason</div><input type="text"></div><div class="wt-row__code"><pre><code>    &lt;HBox styleClass=&quot;wt-row__input_md&quot; fx:id=&quot;reason-two&quot;&gt;
+        &lt;children&gt;
+            &lt;Label text=&quot;Enter the reason&quot;/&gt;
+            &lt;Pane HBox.hgrow=&quot;ALWAYS&quot;/&gt;
+            &lt;TextField fx:id=&quot;treadDepth&quot;/&gt;
+        &lt;/children&gt;
+    &lt;/HBox&gt;
+</code></pre></div><div id="showreason-three" class="wt-row__helper-radiobuttons_ok"><div class="label">Visible control KITAS</div><a href="#test-modal-3" class="helper">?</a><div class="radiobuttons"><div class="radio"><input type="radio" name="343"><span class="check"></span><span class="caption">OK</span></div><div class="radio"><input type="radio" name="343"><span class="check"></span><span class="caption">Not OK</span></div></div></div><div class="wt-row__code"><pre><code>    &lt;HBox styleClass=&quot;wt-row__helper-radiobuttons_ok&quot; fx:id=&quot;showreason-three&quot;&gt;
+        &lt;children&gt;
+            &lt;Label text=&quot;Visible control KITAS&quot;/&gt;
+            &lt;Pane fx:id=&quot;Helper&quot; /&gt;
+            &lt;Pane HBox.hgrow=&quot;ALWAYS&quot;/&gt;
+            &lt;RadioButton text=&quot;OK&quot; mnemonicParsing=&quot;false&quot;/&gt;
+            &lt;RadioButton text=&quot;Not OK&quot; mnemonicParsing=&quot;false&quot;/&gt;
+        &lt;/children&gt;
+    &lt;/HBox&gt;
+</code></pre></div><div id="reason-three" class="wt-row__input_md"><div class="label">Enter the reason</div><input type="text"></div><div class="wt-row__code"><pre><code>    &lt;HBox styleClass=&quot;wt-row__input_md&quot; fx:id=&quot;reason-three&quot;&gt;
+        &lt;children&gt;
+            &lt;Label text=&quot;Enter the reason&quot;/&gt;
+            &lt;Pane HBox.hgrow=&quot;ALWAYS&quot;/&gt;
+            &lt;TextField fx:id=&quot;treadDepth&quot;/&gt;
+        &lt;/children&gt;
+    &lt;/HBox&gt;
+</code></pre></div><div id="showreason-four" class="wt-row__helper-radiobuttons_ok"><div class="label">Maintainance MTCO</div><a href="#test-modal-4" class="helper">?</a><div class="radiobuttons"><div class="radio"><input type="radio" name="344"><span class="check"></span><span class="caption">OK</span></div><div class="radio"><input type="radio" name="344"><span class="check"></span><span class="caption">Not OK</span></div></div></div><div class="wt-row__code"><pre><code>    &lt;HBox styleClass=&quot;wt-row__helper-radiobuttons_ok&quot; fx:id=&quot;showreason-four&quot;&gt;
+        &lt;children&gt;
+            &lt;Label text=&quot;Maintainance MTCO&quot;/&gt;
+            &lt;Pane fx:id=&quot;Helper&quot; /&gt;
+            &lt;Pane HBox.hgrow=&quot;ALWAYS&quot;/&gt;
+            &lt;RadioButton text=&quot;OK&quot; mnemonicParsing=&quot;false&quot;/&gt;
+            &lt;RadioButton text=&quot;Not OK&quot; mnemonicParsing=&quot;false&quot;/&gt;
+        &lt;/children&gt;
+    &lt;/HBox&gt;
+</code></pre></div><div id="reason-four" class="wt-row__input_md"><div class="label">Enter the reason</div><input type="text"></div><div class="wt-row__code"><pre><code>    &lt;HBox styleClass=&quot;wt-row__input_md&quot; fx:id=&quot;reason-four&quot;&gt;
+        &lt;children&gt;
+            &lt;Label text=&quot;Enter the reason&quot;/&gt;
+            &lt;Pane HBox.hgrow=&quot;ALWAYS&quot;/&gt;
+            &lt;TextField fx:id=&quot;treadDepth&quot;/&gt;
+        &lt;/children&gt;
+    &lt;/HBox&gt;
+</code></pre></div></div><div id="test-modal-1" class="mfp-hide wt-popup"><div class="wt-popup__main"><h1>Description</h1><p>Please note such hints later in the inspection report. If required exchange the TCO.<br>Open the drawer, check the mechanical.<br>Check the admission of the tachograph chart</p></div><div class="wt-popup__footer"><a href="#" class="popup-modal-dismiss">Close</a></div></div><div id="test-modal-2" class="mfp-hide wt-popup"><div class="wt-popup__main"><h1>Description</h1><p>TCO housing (manufacturer sealing)<br>Electrical connector block, KITAS cable on sensor (please consider coutry specific requirements)<br>MTCO type plate, old installation plaque<br>Housing demages</p></div><div class="wt-popup__footer"><a href="#" class="popup-modal-dismiss">Close</a></div></div><div id="test-modal-3" class="mfp-hide wt-popup"><div class="wt-popup__main"><h1>Description</h1><p>KITAS at the gearbox against screw looseing<br>All sealings must be signed<br>Magnet in the KITAS environment<br>Viewable scratches on KITAS housing</p></div><div class="wt-popup__footer"><a href="#" class="popup-modal-dismiss">Close</a></div></div><div id="test-modal-4" class="mfp-hide wt-popup"><div class="wt-popup__main"><h1>Description</h1><p>Basic Display, check operation buttons<br><ul><li>Date and systemtime correct?</li><li>No current Error message (additional test are only possible if the current error is fixed)</li><li>Appears the tachographs disc sign on the display with a inserted disc in the MTCO</li><li>Push the timegroup button, the timegroups must accordingly switch in the display.</li></ul><br>Check drawer<ul><li>Open the drawer, check the mechanical.</li><li>Check the admission of the tachograph chart</li></ul><br>Check the functioncontroll-LED display unit<ul><li>Check the functioncontroll LED in exchange between F1 and F2, with chart and without.</li><li>Acknowledge messages in the cluster with any key on the MTCO.</li></ul></p></div><div class="wt-popup__footer"><a href="#" class="popup-modal-dismiss">Close</a></div></div><div class="wt-form--footer"><button class="prev">Prev</button><button class="next">Next</button></div></div></div></div></div><div class="app-footer"><div class="app-footer__buttons"><button id="showFxml" title="Show/Hide FXML Code"><span class="show">&lt;&thinsp;+fxml/&gt;</span><span class="hide">&lt;&thinsp;—fxml/&gt;</span></button><button id="downloadFxml" title="Download FXML File">[&thinsp;&#8595;&thinsp;]</button></div><p class="app-footer__copyright">Property of Fartskriver Solutions AS</p></div><div id="fxml-header" style="display:none"><div class="wt-row__code"><pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+
+&lt;?import javafx.scene.control.*?&gt;
+&lt;?import javafx.scene.layout.*?&gt;
+
+&lt;VBox id=&quot;MainPane&quot; fx:id=&quot;DEVICE_TESTING&quot; styleClass=&quot;wt-form&quot;
+      stylesheets=&quot;@../../../common/css/metro-ui.css&quot;
+      xmlns=&quot;http://javafx.com/javafx/8&quot; xmlns:fx=&quot;http://javafx.com/fxml/1&quot;&gt;
+    &lt;children&gt;
+</code></pre></div></div><div id="fxml-footer" style="display:none"><div class="wt-row__code"><pre><code>    &lt;/children&gt;
+&lt;/VBox&gt;
+</code></pre></div></div></div><script src="./wizard_ge_mtco/wizard.js"></script></body></html>
